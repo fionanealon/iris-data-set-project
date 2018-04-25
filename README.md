@@ -24,6 +24,7 @@ Summary statistics
 ## References
 Keep track of references. 20+ references
 
+
 ## Supporting Tables and graphs
 - Tables in Markdown
 - Histogram
@@ -38,7 +39,8 @@ Keep track of references. 20+ references
 - Images, linnks, references
 
 
-sepal_length | sepal_width | petal_length | petal_width | species
+|sepal_length | sepal_width | petal_length | petal_width | species |
+| --- | --- | --- | --- | --- |
 5.1,3.5,1.4,0.2,Iris-setosa
 4.9,3.0,1.4,0.2,Iris-setosa
 4.7,3.2,1.3,0.2,Iris-setosa
