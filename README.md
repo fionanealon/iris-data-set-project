@@ -21,10 +21,11 @@ The above picture shows the three species contained in each class of the dataset
 
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers.
 
-
+Although Fischer's Iris flower data set was initially collected to quantify the morphologis variation of Iris flowers, it has since become a famous data set for testing purposes in the computer science world. The Iris flower data set can used as an input to examine how various technologies sort and handle data sets. It is also used for testing out machine learning algorithms and visualizations (for example, Scatter Plot, Histogram).
 
 **2. Keep a list of references you used in completing the project.**
 
+https://www.techopedia.com/definition/32880/iris-flower-data-set
 
 # Plan for project
 
