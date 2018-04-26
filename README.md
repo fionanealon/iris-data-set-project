@@ -9,7 +9,7 @@ An online search for information on the data set will convince you that many peo
 1. Research back ground information about the data set and write a summary about it.
 
 
-![A picture of fischer](fib.JPG)
+![A picture of fischer](Fischer.jpg)
 
 
 
