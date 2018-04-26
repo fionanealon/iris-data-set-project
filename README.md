@@ -11,18 +11,16 @@ An online search for information on the data set will convince you that many peo
 
 ![A picture of fischer](Fischer.jpg)
 
-The Iris flower data set or Fisher's Iris data set was introdused by Ronald Fischer in 1936. It is a multivariate data set and is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species.
-
+One of the first multivariate data set was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the morphologic variation of Iris flowers of three related species. The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
 
 ![A picture of iris](iris.png)
 
-The three species of the data set are shown in the above picture.
-
-
-
-
+The above picture shows the three species contained in the class of the dataset - Iris setosa, Iris virginica and Iris versicolor. The dataset contains 50 samples each of these species.
 
 ![A picture of iris labels](iris_with_labels.jpg)
+
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. 
+
 
 
 **2. Keep a list of references you used in completing the project.**
