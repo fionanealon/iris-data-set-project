@@ -11,7 +11,7 @@ An online search for information on the data set will convince you that many peo
 
 ![A picture of fischer](Fischer.jpg)
 
-
+The Iris flower data set or Fisher's Iris data set was compiled by Ronald Fischer in 1936. It is a 'multivariate' data set that contains 50 samples of each of the three iris flower species - Iris setosa, Iris virginica and Iris versicolor)
 
 
 
