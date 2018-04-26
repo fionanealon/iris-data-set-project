@@ -22,6 +22,11 @@ An online search for information on the data set will convince you that many peo
 
 
 
+
+
+![A picture of iris labels](iris_with_labels.jpg)
+
+
 # Plan for project
 
 ## Iris data set
