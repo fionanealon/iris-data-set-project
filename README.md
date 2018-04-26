@@ -16,7 +16,7 @@ An online search for information on the data set will convince you that many peo
 
 
 
-![A picture of iris](iris flowers.png)
+![A picture of iris](iris.png)
 
 
 
