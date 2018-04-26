@@ -14,7 +14,7 @@ An online search for information on the data set will convince you that many peo
 ![A picture of iris flowers](iris flowers.png)
 
 
-![A picture of fischer](Fischer.jpg)
+![A picture of fischer](petalandsepal.png)
 
 
 # Plan for project
