@@ -15,7 +15,7 @@ One of the first multivariate datasets was introduced by British statiscian and 
 
 ![A picture of iris](iris.png)
 
-The above picture shows the three species contained in each class of the dataset - Iris setosa, Iris virginica and Iris versicolor. The dataset contains 50 samples each of these species.
+The above picture shows the three species contained in each class of the dataset - Iris setosa, Iris virginica and Iris versicolor. The dataset contains 50 samples each of these species with their botanical dimensions, sepal and petal, included in each row of the dataset.
 
 ![A picture of iris labels](iris_with_labels.jpg)
 
