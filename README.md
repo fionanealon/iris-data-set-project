@@ -11,7 +11,7 @@ An online search for information on the data set will convince you that many peo
 
 ![A picture of fischer](Fischer.jpg)
 
-One of the first multivariate data set was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the morphologic variation of Iris flowers of three related species. The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
+One of the first multivariate datasets was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the morphologic variation of Iris flowers of three related species. The dataset contains a set of 150 records under 5 attributes - Petal Length , Petal Width , Sepal Length , Sepal width and Class.
 
 ![A picture of iris](iris.png)
 
@@ -19,7 +19,7 @@ The above picture shows the three species contained in the class of the dataset 
 
 ![A picture of iris labels](iris_with_labels.jpg)
 
-Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. 
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers.
 
 
 
