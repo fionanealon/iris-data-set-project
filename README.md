@@ -27,6 +27,16 @@ Although Fischer's Iris flower data set was initially collected to identify the 
 
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 
+
+
+
+**3. Download the data set and write some Python code to investigate it**
+
+
+
+
+
+
 # Plan for project
 
 ## Iris data set
