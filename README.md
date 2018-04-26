@@ -27,6 +27,9 @@ An online search for information on the data set will convince you that many peo
 ![A picture of iris labels](iris_with_labels.jpg)
 
 
+2. Keep a list of references you used in completing the project.
+
+
 # Plan for project
 
 ## Iris data set
