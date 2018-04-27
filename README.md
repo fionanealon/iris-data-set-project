@@ -54,7 +54,7 @@ The numpy library provides some advanced math functionalities to python. It adds
 # Read csv file into python using numpy
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 ```
-Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
+Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array and assign this array to data. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. [Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
 
 ```Python
 # Select all values in first column of numpy array
@@ -66,7 +66,7 @@ thirdcol = data[:,2]
 # Select all values in fourth column of numpy array
 fourthcol = data[:,3]
 ```
-
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array.
 
 ```Python
 # Find the average of the first column of data
