@@ -43,7 +43,8 @@ The mean is the average of an array of numbers. It is calculated by summing all 
 ```Python
 # Fiona Nealon, 2018-04-19
 # Iris data set analysis
-# Calculate the mean of each column.
+
+# Calculate the mean of each column in the numpy array
 
 # Use numpy library to analyse Iris file
 import numpy
@@ -157,9 +158,10 @@ Python then makes call to the values assigned to maxfirstcol, maxsecondcol, maxt
 The minimum number is the smallest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
 ```Python
-# Fiona Nealon, 2018-04-19
+# Fiona Nealon, 2018-04-1925
 # Iris data set analysis
-# Calculate the mean of each column.
+
+# Calculate the median of each column in the numpy array
 
 # Use numpy library to analyse Iris file
 import numpy
