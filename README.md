@@ -40,9 +40,9 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 **3. Download the data set and write some Python code to investigate it**
 
 
-**4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you.
+**4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you**
 
-#### Mean of each column in the Iris flower data set
+- Mean of each column in the Iris flower data set
 
 The mean is the average of an array of numbers. It is calculated by summing all of the numbers in the array and then dividing by the total count of numbers.
 
@@ -101,7 +101,7 @@ print("Average of fourth column is:", meanfourthcol)
 ```
 Python then makes call to the values assigned to meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
 
-#### Maximum of each column in the Iris flower data set
+- Maximum of each column in the Iris flower data set
 
 The maximum number is the largest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -159,7 +159,7 @@ print("Maximum of fourth column is:", maxfourthcol)
 ```
 Python then makes call to the values assigned to maxfirstcol, maxsecondcol, maxthirdcol and maxfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
 
-#### Minimum of each column in the Iris flower data set
+- Minimum of each column in the Iris flower data set
 
 The minimum number is the smallest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
