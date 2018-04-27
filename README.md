@@ -81,8 +81,7 @@ meanthirdcol = numpy.mean(data[:,2])
 meanfourthcol = numpy.mean(data[:,3])
 ```
 
-In the above block of code, I am assigning the mean value of each of the columns to meanfirstcol, meansecondcol, meanthirdcol &
-meanfourthcol using the numpy.mean function. The numpy.mean function calulates the average of each of the columns which have already been selected using ```python data[:,0]``` etc.
+Using the above block of code, I am assigning the mean value of each of the columns to meanfirstcol, meansecondcol, meanthirdcol & meanfourthcol using the numpy.mean function. The numpy.mean function calulates the average of each of the columns which have already been selected using ```python data[:,0]``` etc.
 
 ```Python
 # Print the average of the first column 
@@ -94,16 +93,6 @@ print("Average of third column is:", meanthirdcol)
 # Print the average of the fourth column 
 print("Average of fourth column is:", meanfourthcol)
 ```
-Python calls the values assigned to meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol, adds a string to explain their nmenaing and prints to the terminal.
-
-
-It provides some advance math functionalities to python. NumPy  is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. reating and manipulating numerical data.
-
-Read csv file into python using numpy. Functions in numpy called genfromtxt numpy.genfromtxt('data/iris.csv', delimiter=',')
-n a nutshell, genfromtxt runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type.
-
-Data is a two dimensional array - an array of arrays. To select all of the values in a particular point, use a colon in square brackets. How to select all of the values in a column in a numpy array. data, colon for everything in first dimension
- ,0  in the second dimension just give me the firts thing.
 
 # Plan for project
 
