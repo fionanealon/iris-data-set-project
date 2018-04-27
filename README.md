@@ -31,6 +31,9 @@ https://www.techopedia.com/definition/32880/iris-flower-data-set
 **3. Download the data set and write some Python code to investigate it**
 
 
+**4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you.
+
+## Mean of each column in the Iris flower data set
 
 ```Python
 # Fiona Nealon, 2018-04-19
