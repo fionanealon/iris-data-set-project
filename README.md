@@ -228,6 +228,22 @@ with open("data/iris.csv") as f:
 # Print contents of file
   print(contents)
 ```
+
+```Python
+# Fiona Nealon, 2018-04-05
+# A program that reads and formats the Iris Data set
+
+# Open the data csv file in data sub folder. Also close the data csv file once complete. 
+with open("data/iris.csv")as f:
+
+# Loop through lines of data csv file 
+  for line in f:
+
+# Prints the first four columns of data
+    print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
+```
+
+
 **4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you**
 
 - Mean of each column in the Iris flower data set
