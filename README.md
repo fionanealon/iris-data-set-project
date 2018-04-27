@@ -26,7 +26,7 @@ Although Fischer's Iris flower data set was initially collected to identify the 
 **2. Keep a list of references you used in completing the project.**
 
 https://www.techopedia.com/definition/32880/iris-flower-data-set
-https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/
+https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 
 
@@ -46,14 +46,14 @@ https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 import numpy
 ```
 
-The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set.[Ref: numpy](https://en.wikipedia.org/wiki/NumPy).
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set.[Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
 
 
 ```Python
 # Read csv file into python using numpy
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 ```
-Using the numpy.genfromtxt function, I will use numpy to read in a csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array).
+Using the numpy.genfromtxt function, I will use numpy to read in a csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array)
 
 ```Python
 # Select all values in first column of numpy array
