@@ -160,7 +160,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 6.4 | 2.8 | 5.6 | 2.1 | Iris-virginica
 7.2 | 3.0 | 5.8 | 1.6 | Iris-virginica
 7.4 | 2.8 | 6.1 | 1.9 | Iris-virginica
-7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
+3.7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
 6.4 | 2.8 | 5.6 | 2.2 | Iris-virginica
 6.3 | 2.8 | 5.1 | 1.5 | Iris-virginica
 6.1 | 2.6 | 5.6 | 1.4 | Iris-virginica
@@ -194,6 +194,11 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 
 
 **3. Download the data set and write some Python code to investigate it**
+
+Summary of python files created to investigate Iris flower data set
+1. Openfile1.py - A program to open a .csv file, read it, print it and close again
+2. Openfile2.py - An alernative program to open a .csv file, read it, print it and close again
+3. Split.py - A program that reads and formats the Iris Data set
 
 ```Python
 # Fiona Nealon, 2018-04-27
