@@ -25,7 +25,7 @@ Four features were measured from each sample: the length and the width of the se
 
 Although Fischer's Iris flower data set was initially compiled to identify the botanical variations of Iris flowers, it has since become a famous data set for testing purposes in the computer science world. [Ref: alternative uses](https://www.techopedia.com/definition/32880/iris-flower-data-set) It is a well known, standard data set which programmers repeatedly use as an input to examine how various technologies sort and handle data sets. It is also used for testing out machine learning algorithms and visualizations (for example, Scatter Plot, Histogram). The above picture shows an epample of how the Iris flower data set is used in machine learning algorithms. [Ref: Machine learning algorithms](https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio)
 
-**See below table of the 150 samples of the Iris flower data set containing sepal length, sepal width, petal length, petal width and species**
+**See below table of the 150 samples of the Iris flower data set containing sepal length, sepal width, petal length, petal width and species columns of data.**
 
 |sepal_length | sepal_width | petal_length | petal_width | species |
 | --- | --- | --- | --- | --- |
