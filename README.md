@@ -38,6 +38,8 @@ https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 
 #### Mean of each column in the Iris flower data set
 
+The mean is the average of an array of numbers. It is calculated by summing all of the numbers in the array and then dividing by the total count of numbers.
+
 ```Python
 # Fiona Nealon, 2018-04-19
 # Iris data set analysis
@@ -77,9 +79,12 @@ meansecondcol = numpy.mean(data[:,1])
 meanthirdcol = numpy.mean(data[:,2])
 # Find the average of the fourth column of data
 meanfourthcol = numpy.mean(data[:,3])
+```
 
+In the above block of code, I am assigning the mean value of each of the columns to meanfirstcol, meansecondcol, meanthirdcol &
+meanfourthcol using the numpy.mean function. The numpy.mean function calulates the average of each of the columns which have already been selected using ```python data[:,0]``` etc.
 
-
+```Python
 # Print the average of the first column 
 print("Average of first column is:", meanfirstcol)
 # Print the average of the second column 
@@ -89,6 +94,8 @@ print("Average of third column is:", meanthirdcol)
 # Print the average of the fourth column 
 print("Average of fourth column is:", meanfourthcol)
 ```
+Python calls the values assigned to meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol, adds a string to explain their nmenaing and prints to the terminal.
+
 
 It provides some advance math functionalities to python. NumPy  is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. reating and manipulating numerical data.
 
