@@ -19,8 +19,7 @@ The above picture shows the three species contained in each class of the dataset
 
 ![A picture of iris labels](iris_with_labels.jpg)
 
-Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers.
-
+Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers. [Ref: Petal](https://en.wikipedia.org/wiki/Petal) [Ref: Sepal](https://en.wikipedia.org/wiki/Sepal)
 
 ![A picture of machine learning](vPTf6.png)
 
@@ -29,6 +28,8 @@ Although Fischer's Iris flower data set was initially collected to identify the 
 **2. Keep a list of references you used in completing the project.**
 
 https://en.wikipedia.org/wiki/Iris_flower_data_set
+https://en.wikipedia.org/wiki/Petal
+https://en.wikipedia.org/wiki/Sepal)
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
