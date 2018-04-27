@@ -26,6 +26,8 @@ Although Fischer's Iris flower data set was initially collected to identify the 
 **2. Keep a list of references you used in completing the project.**
 
 https://www.techopedia.com/definition/32880/iris-flower-data-set
+https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/
+https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 
 
 **3. Download the data set and write some Python code to investigate it**
@@ -42,10 +44,18 @@ https://www.techopedia.com/definition/32880/iris-flower-data-set
 
 # Use numpy library to analyse Iris file
 import numpy
+```
 
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set.[Ref: numpy](https://en.wikipedia.org/wiki/NumPy).
+
+
+```Python
 # Read csv file into python using numpy
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+```
+Using the numpy.genfromtxt function, I will use numpy to read in a csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array).
 
+```Python
 # Select all values in first column of numpy array
 firstcol = data[:,0]
 # Select all values in second column of numpy array
@@ -73,7 +83,13 @@ print("Average of third column is:", meanthirdcol)
 print("Average of fourth column is:", meanfourthcol)
 ```
 
+It provides some advance math functionalities to python. NumPy  is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. reating and manipulating numerical data.
 
+Read csv file into python using numpy. Functions in numpy called genfromtxt numpy.genfromtxt('data/iris.csv', delimiter=',')
+n a nutshell, genfromtxt runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type.
+
+Data is a two dimensional array - an array of arrays. To select all of the values in a particular point, use a colon in square brackets. How to select all of the values in a column in a numpy array. data, colon for everything in first dimension
+ ,0  in the second dimension just give me the firts thing.
 
 # Plan for project
 
