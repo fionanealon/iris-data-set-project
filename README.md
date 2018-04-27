@@ -194,7 +194,23 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 
 
 **3. Download the data set and write some Python code to investigate it**
+```Python
+# Fiona Nealon, 2018-04-27
+# Iris data set analysis
+# A program to open a .csv file, read it, print it and close again
 
+# Open iris.csv file in subfolder
+f = open("data/iris.csv")
+
+# Output information about file
+print(f)
+
+# Print contents of file
+print(f.read())
+
+# Close iris.csv file
+f.close()
+```
 
 **4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you**
 
