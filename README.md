@@ -6,7 +6,7 @@ The following project concerns the well-known Fischer's Iris data set. The proje
 
 An online search for information on the data set will convince you that many people have investigated and written about it previously, and may of those are not experienced programmers, You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows:
 
-**1. Research back ground information about the data set and write a summary about it.**
+##**1. Research back ground information about the data set and write a summary about it.**##
 
 
 ![A picture of fischer](Fischer.jpg)
