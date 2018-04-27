@@ -6,7 +6,7 @@ The following project concerns the well-known Fischer's Iris data set. The proje
 
 An online search for information on the data set will convince you that many people have investigated and written about it previously, and may of those are not experienced programmers, You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows:
 
-##**1. Research back ground information about the data set and write a summary about it.**##
+**1. Research back ground information about the data set and write a summary about it.**
 
 
 ![A picture of fischer](Fischer.jpg)
@@ -195,7 +195,8 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 
 **3. Download the data set and write some Python code to investigate it**
 
-Summary of python files created to investigate Iris flower data set
+   Summary of python files created to investigate Iris flower data set
+   
 1. Openfile1.py - A program to open a .csv file, read it, print it and close again
 2. Openfile2.py - An alernative program to open a .csv file, read it, print it and close again
 3. Split.py - A program that reads and formats the Iris Data set
