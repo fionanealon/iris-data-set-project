@@ -22,9 +22,9 @@ The above picture shows the three species contained in each class of the dataset
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers.
 
 
-![A picture of histogram](vPTf6.png)
+![A picture of machine learning](vPTf6.png)
 
-Although Fischer's Iris flower data set was initially collected to identify the botanical variations of Iris flowers, it has since become a famous data set for testing purposes in the computer science world. It a well known, standard data set which programmers repeatedly use as an input to examine how various technologies sort and handle data sets. It is also used for testing out machine learning algorithms and visualizations (for example, Scatter Plot, Histogram).
+Although Fischer's Iris flower data set was initially collected to identify the botanical variations of Iris flowers, it has since become a famous data set for testing purposes in the computer science world. It a well known, standard data set which programmers repeatedly use as an input to examine how various technologies sort and handle data sets. It is also used for testing out machine learning algorithms and visualizations (for example, Scatter Plot, Histogram). The above shows an expample of how the Iris flower data set is used in machine learning algorithms. [Ref:Machine learning algorithms](https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio)
 
 **2. Keep a list of references you used in completing the project.**
 
@@ -33,6 +33,7 @@ https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
+https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
 
 
 **3. Download the data set and write some Python code to investigate it**
