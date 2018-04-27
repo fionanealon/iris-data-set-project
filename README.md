@@ -28,6 +28,7 @@ Although Fischer's Iris flower data set was initially collected to identify the 
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
+https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 
 
 **3. Download the data set and write some Python code to investigate it**
@@ -46,14 +47,14 @@ https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 import numpy
 ```
 
-The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set.[Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
 
 
 ```Python
 # Read csv file into python using numpy
 data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 ```
-Using the numpy.genfromtxt function, I will use numpy to read in a csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array)
+Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams.[Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
 
 ```Python
 # Select all values in first column of numpy array
@@ -64,6 +65,10 @@ secondcol = data[:,1]
 thirdcol = data[:,2]
 # Select all values in fourth column of numpy array
 fourthcol = data[:,3]
+```
+
+
+```Python
 # Find the average of the first column of data
 meanfirstcol = numpy.mean(data[:,0])
 # Find the average of the second column of data
