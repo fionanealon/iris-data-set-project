@@ -11,7 +11,7 @@ An online search for information on the data set will convince you that many peo
 
 ![A picture of fischer](Fischer.jpg)
 
-One of the first multivariate datasets was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the morphologic variation of Iris flowers of three related species. There are 150 rows of data in the dataet and each row of the dataset represents an iris flower, including its species and dimensions of its botanical parts, sepal and petal, in centimeters.
+One of the first multivariate data sets was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the morphologic variation of Iris flowers of three related species. There are 150 rows of data in the dataet and each row of the dataset represents an iris flower, including its species and dimensions of its botanical parts, sepal and petal, in centimeters. [Ref: Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
 ![A picture of iris](iris.png)
 
@@ -21,10 +21,13 @@ The above picture shows the three species contained in each class of the dataset
 
 Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. The sepal is described as a part of the flower of angiosperms (flowering plants). Sepals typically function as protection for the flower in bud, and often as support for the petals when in bloom. Petals are described as modified leaves that surround the reproductive parts of flowers.
 
+
+![A picture of histogram](iris_with_labels.jpg)
 Although Fischer's Iris flower data set was initially collected to identify the botanical variations of Iris flowers, it has since become a famous data set for testing purposes in the computer science world. It a well known, standard data set which programmers repeatedly use as an input to examine how various technologies sort and handle data sets. It is also used for testing out machine learning algorithms and visualizations (for example, Scatter Plot, Histogram).
 
 **2. Keep a list of references you used in completing the project.**
 
+https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
