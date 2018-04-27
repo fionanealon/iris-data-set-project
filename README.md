@@ -66,7 +66,7 @@ thirdcol = data[:,2]
 # Select all values in fourth column of numpy array
 fourthcol = data[:,3]
 ```
-In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array.
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
 
 ```Python
 # Find the average of the first column of data
@@ -77,6 +77,8 @@ meansecondcol = numpy.mean(data[:,1])
 meanthirdcol = numpy.mean(data[:,2])
 # Find the average of the fourth column of data
 meanfourthcol = numpy.mean(data[:,3])
+
+
 
 # Print the average of the first column 
 print("Average of first column is:", meanfirstcol)
