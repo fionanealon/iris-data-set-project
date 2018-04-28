@@ -320,6 +320,7 @@ The above 'split' command splits each line into a python list. The 'index' metho
 11. Type ‘python split.py’ in the command prompt in the terminal
 12. Press enter
 
+investigate.py
 
 ```Python
 # Print contents of file
@@ -368,7 +369,26 @@ print('The average of values in column sepal_length:', dataset['sepal_width'].me
 print('The average of values in sepal_length:', dataset['petal_length'].mean())
 print('The average of values in sepal_length:', dataset['petal_width'].mean())
 ```
+#### Discussion and analysis of investigate.py
+ 
+The above piece of code opens a file object using open(). The file being opened in this case is the iris.csv in th data subfolder. The program prints some information about the file using ```print(f)```. The program then reads the file and prints it using ```print(f.read())```. It is good practise to close the file before the program exits. Otherwise, the program is in an indeterminate state. The programs then closes the file using ```f.close()```
+ 
+#### How to run this code:
 
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save investigate.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open investiagte.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python investigate.py’ in the command prompt in the terminal
+12. Press enter
 
 **4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you**
 
