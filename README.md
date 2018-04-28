@@ -260,8 +260,7 @@ with open("data/iris.csv") as f:
 ```
 #### Discussion and analysis of openfile2.py
 
-
-
+The above piece of code is an alternative program for opening a file, reading a file, printing a file and and close the file once complete. This program uses a 'with' statement to open the file. The code states that with the data/iris.csv file as f, create a block of python code where f is a variable and each line of code indented after this with statement can access f (data/iris.csv) file. The 'with statement' will close f (data/iris.csv) file once it reaches an unindented line of code.
 
 #### How to run this code:
 
