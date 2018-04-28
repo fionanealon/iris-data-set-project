@@ -201,7 +201,7 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 1. openfile1.py - A program that opens a .csv file, reads it, prints it and closes it again
 2. openfile2.py - An alernative program opens a .csv file, reads it, prints it and closes it again
 3. Split.py - A program that reads and formats the Iris Data set
-4. Investigate.py - A program that reads a .csv file, manipulates it to provide data analysis on it and prints max, min, sum, count & average of each column
+4. Investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column
 
 #### openfile1.py - A program that opens a .csv file, reads it, prints it and closes it again
  
@@ -321,7 +321,7 @@ The above 'split' command splits each line into a python list. The 'index' metho
 11. Type ‘python split.py’ in the command prompt in the terminal
 12. Press enter
 
-#### investigate.py - A program that reads a .csv file, manipulates it to provide data analysis on it and prints max, min, sum, count & average of each column
+#### investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column
 
 ```Python
 # Print contents of file
