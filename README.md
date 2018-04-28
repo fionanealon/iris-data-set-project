@@ -162,8 +162,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 7.4 | 2.8 | 6.1 | 1.9 | Iris-virginica
 3.7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
 6.4 | 2.8 | 5.6 | 2.2 | Iris-virginica
-6.3 | 2.8 | 5.1 | 1.5 | Iris-virginica
-6.1 | 2.6 | 5.6 | 1.4 | Iris-virginica
+6.3 | 2.8 | 5.1 | 1.5 | Iris-virgini6.1 | 2.6 | 5.6 | 1.4 | Iris-virginica
 7.7 | 3.0 | 6.1 | 2.3 | Iris-virginica
 6.3 | 3.4 | 5.6 | 2.4 | Iris-virginica
 6.4 | 3.1 | 5.5 | 1.8 | Iris-virginica
@@ -186,6 +185,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://en.wikipedia.org/wiki/Petal
 https://en.wikipedia.org/wiki/Sepal)
+
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
@@ -195,12 +195,11 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 
 **3. Download the data set and write some Python code to investigate it**
 
-   Summary of python files created to investigate Iris flower data set
-   
+   Summary of python files uploaded to project repository to investigate the Iris flower data set  
 1. Openfile1.py - A program to open a .csv file, read it, print it and close again
 2. Openfile2.py - An alernative program to open a .csv file, read it, print it and close again
 3. Split.py - A program that reads and formats the Iris Data set
-4. Investigate.py - A program to read in a .csv file and print max, min, sum, count & average of each column
+4. Investigate.py - A program to read a .csv file and print max, min, sum, count & average of each column
 
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -215,6 +214,36 @@ print(f)
 # Close iris.csv file
 f.close()
 ```
+```Python
+# Fiona Nealon, 2018-04-27
+# Iris data set analysis
+# An alernative program to open a .csv file, read it, print it and close again
+
+# Open .csv file with f as a variable
+with open("data/iris.csv") as f:
+
+# Read contents of file
+  contents = f.read()
+
+# Print contents of file
+  print(contents)
+```
+
+```Python
+# Fiona Nealon, 2018-04-05
+# A program that reads and formats the Iris Data set
+
+# Open the data csv file in data sub folder. Also close the data csv file once complete. 
+with open("data/iris.csv")as f:
+
+# Loop through lines of data csv file 
+  for line in f:
+
+# Prints the first four columns of data
+    print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
+```
+
+
 
 ```Python
 # Print contents of file
@@ -262,35 +291,6 @@ print('The average of values in column sepal_length:', dataset['sepal_length'].m
 print('The average of values in column sepal_length:', dataset['sepal_width'].mean())
 print('The average of values in sepal_length:', dataset['petal_length'].mean())
 print('The average of values in sepal_length:', dataset['petal_width'].mean())
-```
-
-```Python
-# Fiona Nealon, 2018-04-27
-# Iris data set analysis
-# An alernative program to open a .csv file, read it, print it and close again
-
-# Open .csv file with f as a variable
-with open("data/iris.csv") as f:
-
-# Read contents of file
-  contents = f.read()
-
-# Print contents of file
-  print(contents)
-```
-
-```Python
-# Fiona Nealon, 2018-04-05
-# A program that reads and formats the Iris Data set
-
-# Open the data csv file in data sub folder. Also close the data csv file once complete. 
-with open("data/iris.csv")as f:
-
-# Loop through lines of data csv file 
-  for line in f:
-
-# Prints the first four columns of data
-    print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
 ```
 
 
