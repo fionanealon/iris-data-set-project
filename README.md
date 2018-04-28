@@ -190,6 +190,7 @@ http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://en.wikipedia.org/wiki/Pandas_%28software%29
+https://en.wikipedia.org/wiki/Median
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
@@ -466,7 +467,6 @@ print("Average of fourth column is:", meanfourthcol)
 ```
 The above lines then call the print function with an argument of meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol values.
 
-
 #### Maximum of each column in the Iris flower data set - max.py
 
 The maximum number is the largest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
@@ -530,7 +530,7 @@ The above lines then call the print function with an argument of minfirstcol, mi
 The minimum number is the smallest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
 ```Python
-# Fiona Nealon, 2018-04-1925
+# Fiona Nealon, 2018-04-19
 # Iris data set analysis
 
 # Calculate the minimum of each column in the numpy array
@@ -572,18 +572,6 @@ minfourthcol = numpy.min(fourthcol)
 In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
 
 ```Python
-# Find the minimum of the first column of data
-minfirstcol = numpy.min(firstcol)
-# Find the minimum of the second column of data
-minsecondcol = numpy.min(secondcol)
-# Find the minimum of the third column of data
-minthirdcol = numpy.min(thirdcol)
-# Find the minimum of the fourth column of data
-minfourthcol = numpy.min(fourthcol)
-```
-In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
-
-```Python
 # Print the minimum of the first column
 print("Minimum of first column is:", minfirstcol)
 # Print the minimum of the second column
@@ -594,6 +582,124 @@ print("Minimum of third column is:", minthirdcol)
 print("Minimum of fourth column is:", minfourthcol)
 ```
 The above lines the call the print function with an argument of minfirstcol, minsecondcol, minthirdcol and minfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  minfirstcol, minsecondcol, minthirdcol and minfourthcol values.
+
+#### Median of each column in the Iris flower data set - median.py
+
+The median is the value separating the higher half of a data sample, a population, or a probability distribution, from the lower half. For a data set, it may be thought of as the "middle" value. [Ref: Median](https://en.wikipedia.org/wiki/Median) This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
+
+```Python
+
+# Fiona Nealon, 2018-04-19
+# Iris data set analysis
+
+# Calculate the median of each column in the numpy array
+
+# Use numpy library to analyse Iris file
+import numpy
+```
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.median functions to read the csv file into python using numpy and calculate the min of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
+
+```Python
+# Read csv file into python using numpy
+data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+```
+Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array and assign this array to data. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. [Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
+
+```python
+# Select all values in first column of numpy array
+firstcol = data[:,0]
+# Select all values in second column of numpy array
+secondcol = data[:,1]
+# Select all values in third column of numpy array
+thirdcol = data[:,2]
+# Select all values in fourth column of numpy array
+fourthcol = data[:,3]
+```
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+```Python
+# Find the median of the first column of data
+medianfirstcol = numpy.median(firstcol)
+# Find the median of the second column of data
+mediansecondcol = numpy.median(secondcol)
+# Find the median of the third column of data
+medianthirdcol = numpy.median(thirdcol)
+# Find the median of the fourth column of data
+medianfourthcol = numpy.median(fourthcol)
+```
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+```Python
+# Print the median of the first column
+print("Median of first column is:", medianfirstcol)
+# Print the median of the second column
+print("Median of second column is:", mediansecondcol)
+# Print the median of the third column
+print("Median of third column is:", medianthirdcol)
+# Print the median if the fourth column
+print("Median of fourth column is:", medianfourthcol)
+```
+The above lines the call the print function with an argument of medianfirstcol, mmediansecondcol, medianthirdcol and medianfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  medianfirstcol, mediansecondcol, medianthirdcol and medianfourthcol values.
+
+#### Sum of each column in the Iris flower data set - sum.py
+
+The sum number is the total number of all the numbers added together in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
+
+```Python
+
+# Fiona Nealon, 2018-04-26
+# Iris data set analysis
+# Calculate the sum of each column in the numpy array
+
+# Use numpy library to analyse Iris file
+import numpy
+```
+
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.sum functions to read the csv file into python using numpy and calculate the min of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
+
+```Python
+# Read csv file into python using numpy
+data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+```
+Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array and assign this array to data. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. [Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
+
+```python
+# Select all values in first column of numpy array
+firstcol = data[:,0]
+# Select all values in second column of numpy array
+secondcol = data[:,1]
+# Select all values in third column of numpy array
+thirdcol = data[:,2]
+# Select all values in fourth column of numpy array
+fourthcol = data[:,3]
+```
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+
+```Python
+# Find the sum of the first column of data
+sumfirstcol = numpy.min(firstcol)
+# Find the sum of the second column of data
+sumsecondcol = numpy.min(secondcol)
+# Find the sum of the third column of data
+sumthirdcol = numpy.min(thirdcol)
+# Find the sum of the fourth column of data
+sumfourthcol = numpy.min(fourthcol)
+```
+
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+```Python
+# Print the sum of the first column
+print("Sum of first column is:", sumfirstcol)
+# Print the sum of the second column
+print("Sum of second column is:", sumsecondcol)
+# Print the sum of the third column
+print("Sum of third column is:", sumthirdcol)
+# Print the sum if the fourth column
+print("Sum of fourth column is:", sumfourthcol)
+```
+The above lines the call the print function with an argument of sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol values.
 
 
 
