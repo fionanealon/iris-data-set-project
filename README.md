@@ -464,7 +464,8 @@ print("Average of third column is:", meanthirdcol)
 # Print the average of the fourth column 
 print("Average of fourth column is:", meanfourthcol)
 ```
-Python then makes call to the values assigned to meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
+The above lines then call the print function with an argument of meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol values.
+
 
 #### Maximum of each column in the Iris flower data set - max.py
 
@@ -480,8 +481,7 @@ The maximum number is the largest number in an array of numbers. This python scr
 import numpy
 ```
 
-The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
-
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.max functions to read the csv file into python using numpy and calculate the max of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
 
 ```Python
 # Read csv file into python using numpy
@@ -522,7 +522,8 @@ print("Maximum of third column is:", maxthirdcol)
 # Print the maximum of the fourth column 
 print("Maximum of fourth column is:", maxfourthcol)
 ```
-Python then makes call to the values assigned to maxfirstcol, maxsecondcol, maxthirdcol and maxfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
+The above lines then call the print function with an argument of minfirstcol, minsecondcol, minthirdcol and minfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  maxfirstcol, maxsecondcol, maxthirdcol and maxfourthcol values.
+
 
 #### Minimum of each column in the Iris flower data set - min.py
 
@@ -538,8 +539,7 @@ The minimum number is the smallest number in an array of numbers. This python sc
 import numpy
 ```
 
-The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.mean functions to read the csv file into python using numpy and calculate the mean of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
-
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.min functions to read the csv file into python using numpy and calculate the min of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
 
 ```Python
 # Read csv file into python using numpy
@@ -547,7 +547,7 @@ data = numpy.genfromtxt('data/iris.csv', delimiter=',')
 ```
 Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array and assign this array to data. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. [Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
 
-```Python
+```python
 # Select all values in first column of numpy array
 firstcol = data[:,0]
 # Select all values in second column of numpy array
@@ -569,7 +569,19 @@ minthirdcol = numpy.min(thirdcol)
 # Find the minimum of the fourth column of data
 minfourthcol = numpy.min(fourthcol)
 ```
-Using the above block of code, the numpy.max function calls the values assigned to firstcol, secondcol, thirdcol & fourthcol and calulates the maximum of each of the columns. The maximum value of each of the columns is then assigned to minfirstcol, minsecondcol, minthirdcol & minfourthcol.
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+```Python
+# Find the minimum of the first column of data
+minfirstcol = numpy.min(firstcol)
+# Find the minimum of the second column of data
+minsecondcol = numpy.min(secondcol)
+# Find the minimum of the third column of data
+minthirdcol = numpy.min(thirdcol)
+# Find the minimum of the fourth column of data
+minfourthcol = numpy.min(fourthcol)
+```
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```python Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```python :,``` to my code so that this selects everything in the first dimension of the array (the column). ```python Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
 
 ```Python
 # Print the minimum of the first column
@@ -581,7 +593,7 @@ print("Minimum of third column is:", minthirdcol)
 # Print the minimum if the fourth column
 print("Minimum of fourth column is:", minfourthcol)
 ```
-Python then makes call to the values assigned to minfirstcol, minsecondcol, minthirdcol and minfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
+The above lines the call the print function with an argument of minfirstcol, minsecondcol, minthirdcol and minfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  minfirstcol, minsecondcol, minthirdcol and minfourthcol values.
 
 
 
