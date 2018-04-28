@@ -320,7 +320,7 @@ The above 'split' command splits each line into a python list. The 'index' metho
 11. Type ‘python split.py’ in the command prompt in the terminal
 12. Press enter
 
-investigate.py
+#### investigate.py
 
 ```Python
 # Print contents of file
@@ -371,7 +371,8 @@ print('The average of values in sepal_length:', dataset['petal_width'].mean())
 ```
 #### Discussion and analysis of investigate.py
  
-The above piece of code opens a file object using open(). The file being opened in this case is the iris.csv in th data subfolder. The program prints some information about the file using ```print(f)```. The program then reads the file and prints it using ```print(f.read())```. It is good practise to close the file before the program exits. Otherwise, the program is in an indeterminate state. The programs then closes the file using ```f.close()```
+The above program finds the maximum, minimum, sum, count and mean of each column in the Iris flower data set. It uses both the numpy and pandas libraries which provide a collection of high level mathemetical functions to operate on arrays to assist with data maipulation and analysis.
+ 
  
 #### How to run this code:
 
