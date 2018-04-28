@@ -214,6 +214,10 @@ f = open("data/iris.csv")
 
 # Output information about file
 print(f)
+
+# Print contents of file
+print(f.read())
+
 # Close iris.csv file
 f.close()
 ```
