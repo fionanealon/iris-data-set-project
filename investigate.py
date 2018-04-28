@@ -1,15 +1,15 @@
 # Fiona Nealon, 2018-04-27
 # Iris data set analysis
-# A program to read it a .csv file and print max, min, sum, count & average of each column
+# A program to read in a .csv file and print max, min, sum, count & average of each column
 
 # import pandas library
 import pandas as pd
 # Import numpy library
 import numpy as np 
 
-
-# Assign iris.csv file to dataset
-dataset = pandas.read_csv('data/iris.csv')
+# Adapted from https://www.youtube.com/watch?v=hllTTzHazDY
+# Read iris.csv file and assign to dataset
+dataset = pd.read_csv('data/iris.csv')
 
 # Get the maximum value of each column 
 print('Maximum value of column sepal_length:', dataset['sepal_length'].max())
