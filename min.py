@@ -1,4 +1,4 @@
-# Fiona Nealon, 2018-04-1925
+# Fiona Nealon, 2018-04-19
 # Iris data set analysis
 
 # Calculate the median of each column in the numpy array
