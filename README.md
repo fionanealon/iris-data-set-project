@@ -243,7 +243,7 @@ The above piece of code opens a file object using open(). The file being opened 
 11. Type ‘python openfile1.py’ in the command prompt in the terminal
 12. Press enter
 
-#### openfile2.py - An alernative program opens a .csv file, reads it, prints it and closes it again
+#### openfile2.py - An alernative program that opens a .csv file, reads it, prints it and closes it again
 
 ```Python
 # Fiona Nealon, 2018-04-27
