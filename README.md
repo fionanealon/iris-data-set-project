@@ -197,12 +197,12 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 **3. Download the data set and write some Python code to investigate it**
 
    Summary of python files uploaded to project repository to investigate the Iris flower data set  
-1. Openfile1.py - A program to open a .csv file, read it, print it and close again
-2. Openfile2.py - An alernative program to open a .csv file, read it, print it and close again
+1. openfile1.py - A program to open a .csv file, read it, print it and close again
+2. openfile2.py - An alernative program to open a .csv file, read it, print it and close again
 3. Split.py - A program that reads and formats the Iris Data set
 4. Investigate.py - A program to read a .csv file and print max, min, sum, count & average of each column
 
-#### Openfile1.py 
+#### 0penfile1.py 
  
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -221,11 +221,26 @@ print(f.read())
 # Close iris.csv file
 f.close()
 ```
-#### Discussion and analysis of Openfile1.py
+#### Discussion and analysis of openfile1.py
  
-The above piece of code opens a file object using open(). The file being opened in this case is the iris.csv in th data subfolder. The program prints some information about the file using ```print(f)```. It is good practise to close the file before the program exits. Otherwise, the program is in an indeterminate state.
+The above piece of code opens a file object using open(). The file being opened in this case is the iris.csv in th data subfolder. The program prints some information about the file using ```print(f)```. The program then reads the file and prints it using ```print(f.read())```. It is good practise to close the file before the program exits. Otherwise, the program is in an indeterminate state. The programs then closes the file using ```f.close()```
  
+#### How to run this code:
 
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save openfile1.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open openfile1.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python openfile1.py’ in the command prompt in the terminal
+12. Press enter
 
 
 
