@@ -163,7 +163,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 3.7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
 6.4 | 2.8 | 5.6 | 2.2 | Iris-virginica
 6.3 | 2.8 | 5.1 | 1.5 | Iris-virginica
-6.1| 2.6 | 5.6 | 1.4 | Iris-virginica
+6.1 | 2.6 | 5.6 | 1.4 | Iris-virginica
 7.7 | 3.0 | 6.1 | 2.3 | Iris-virginica
 6.3 | 3.4 | 5.6 | 2.4 | Iris-virginica
 6.4 | 3.1 | 5.5 | 1.8 | Iris-virginica
@@ -302,7 +302,7 @@ The above block of code opens the iris.csv file in the sub folder, loops through
 ```python
 print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
 ```
-The above 'split' command splits each line into a python list. The 'index' method finds the given element in a list and returns its position so [0] prints the first column in the last, [1] prints the second column in the list, [2] prints the third column on the list and [3] prints the fourth column on the list.
+The above 'split' command splits each line into a python list. The 'index' method finds the given element in a list and returns its position so [0] prints the first column in the list, [1] prints the second column in the list, [2] prints the third column on the list and [3] prints the fourth column on the list.
 
 #### How to run this code:
 
@@ -373,8 +373,13 @@ print('The average of values in sepal_length:', dataset['petal_width'].mean())
 #### Discussion and analysis of investigate.py
  
 The above program finds the maximum, minimum, sum, count and mean of each column in the Iris flower data set. It uses both the numpy and pandas libraries which provide a collection of high level mathemetical functions to operate on arrays to assist with data maipulation and analysis. [Ref: Numpy](https://en.wikipedia.org/wiki/NumPy) [Ref: Pandas](https://en.wikipedia.org/wiki/Pandas_%28software%29)
- 
- 
+
+The program reads the iris.csv file from the subfolder and assigns the name dataset to it. ```dataset = pd.read_csv('data/iris.csv')``` ```pd.read_csv``` is an attribute of the pandas library that reads a csv file into python.
+
+The program calls the max(), min(), sum(), count() and mean() functions to manipulate the data set and provide an analysis of each column.
+
+The 'index' method finds the given element in a list and returns its position so ['sepal_length'] prints the sepal length column in the list, ['sepal_width'] prints the sepal width column in the list, ['petal_length'] prints the petal length column in the list and ['sepal_width'] prints the sepal length column in the list
+
 #### How to run this code:
 
 1. Download [Anaconda](https://anaconda.org/).
