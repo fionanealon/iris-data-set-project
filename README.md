@@ -398,9 +398,16 @@ In the print functions, the 'index' method finds the given element in an array a
 11. Type ‘python investigate.py’ in the command prompt in the terminal
 12. Press enter
 
-**4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Pythin script will quickly do this for you**
+**4. Summarise the data set by, for example calculating the maximun, minimum and mean of each column. A Python script will quickly do this for you**
 
-- Mean of each column in the Iris flower data set
+ Summary of python files uploaded to project repository to investigate the Iris flower data set  
+1. mean.py - A python script to calculate the mean of each column
+2. max.py - A python script to calculate the maximum of each column
+3. min.py - A python script to calculate the minimum of each column
+4. median.py - A python script to calculate the median of each column
+5. sum.py - A python script to calculate the sum of each column
+
+#### Mean of each column in the Iris flower data set - mean.py
 
 The mean is the average of an array of numbers. It is calculated by summing all of the numbers in the array and then dividing by the total count of numbers.
 
@@ -459,7 +466,7 @@ print("Average of fourth column is:", meanfourthcol)
 ```
 Python then makes call to the values assigned to meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
 
-- Maximum of each column in the Iris flower data set
+#### Maximum of each column in the Iris flower data set - max.py
 
 The maximum number is the largest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -517,7 +524,7 @@ print("Maximum of fourth column is:", maxfourthcol)
 ```
 Python then makes call to the values assigned to maxfirstcol, maxsecondcol, maxthirdcol and maxfourthcol, I have added a string to the code to explain these values and they are then printed them to the command prompt.
 
-- Minimum of each column in the Iris flower data set
+#### Minimum of each column in the Iris flower data set - min.py
 
 The minimum number is the smallest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -525,7 +532,7 @@ The minimum number is the smallest number in an array of numbers. This python sc
 # Fiona Nealon, 2018-04-1925
 # Iris data set analysis
 
-# Calculate the median of each column in the numpy array
+# Calculate the minimum of each column in the numpy array
 
 # Use numpy library to analyse Iris file
 import numpy
