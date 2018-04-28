@@ -279,7 +279,7 @@ The above piece of code is an alternative program for opening a file, reading a 
 11. Type ‘python openfile2.py’ in the command prompt in the terminal
 12. Press enter
 
-
+#### split.py
 
 ```Python
 # Fiona Nealon, 2018-04-05
@@ -294,7 +294,31 @@ with open("data/iris.csv")as f:
 # Prints the first four columns of data
     print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
 ```
+#### Discussion and analysis of split.py
 
+The above block of code opens the iris.csv file in the sub folder, loops through this file, formats this file, prints the formatted file and closes the file once complete. It is good practise to close a file once complete. This code states that with the data/iris.csv file as f, create a block of python code where f is a variable and each line of code indented after this with statement can access f (data/iris.csv) file. The 'with statement' will close f (data/iris.csv) file once it reaches an unindented line of code.The 'for loop' loops through each of the lines on  f (data/iris.csv) file.
+
+```python
+print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
+```
+The above 'split' command splits each line into a python list. The 'index' method finds the given element in a list and returns its position so [0] prints the first column in the last, [1] prints the second column in the list, [2] prints the third column on the list and [3] prints the fourth column on the list.
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save split.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open split.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python split.py’ in the command prompt in the terminal
+12. Press enter
 
 
 ```Python
