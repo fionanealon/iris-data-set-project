@@ -200,6 +200,7 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 1. Openfile1.py - A program to open a .csv file, read it, print it and close again
 2. Openfile2.py - An alernative program to open a .csv file, read it, print it and close again
 3. Split.py - A program that reads and formats the Iris Data set
+4. Investigate.py - A program to read in a .csv file and print max, min, sum, count & average of each column
 
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -211,14 +212,57 @@ f = open("data/iris.csv")
 
 # Output information about file
 print(f)
-
-# Print contents of file
-print(f.read())
-
 # Close iris.csv file
 f.close()
 ```
 
+```Python
+# Print contents of file
+print(f.read())
+# Fiona Nealon, 2018-04-27
+# Iris data set analysis
+# A program to read in a .csv file and print max, min, sum, count & average of each column
+
+# import pandas library
+import pandas as pd
+
+# Import numpy library
+import numpy as np 
+
+# Adapted from https://www.youtube.com/watch?v=hllTTzHazDY
+# Read iris.csv file and assign to dataset
+dataset = pd.read_csv('data/iris.csv')
+
+# Get the maximum value of each column 
+print('Maximum value of column sepal_length:', dataset['sepal_length'].max())
+print('Maximum value of column sepal_length:', dataset['sepal_width'].max())
+print('Maximum value of column sepal_length:', dataset['petal_length'].max())
+print('Maximum value of column sepal_length:', dataset['petal_width'].max())
+
+# Get the minimum value of each column
+print('Minimum value of column sepal_length:', dataset['sepal_length'].min())
+print('Minimum value of column sepal_length:', dataset['sepal_width'].min())
+print('Minimum value of column sepal_length:', dataset['petal_length'].min())
+print('Minimum value of column sepal_length:', dataset['petal_width'].min())
+
+# Get the sum value of each column
+print('Sum value of column sepal_length:', dataset['sepal_length'].sum())
+print('Sum value of column sepal_length:', dataset['sepal_width'].sum())
+print('Sum value of column sepal_length:', dataset['petal_length'].sum())
+print('Sum value of column sepal_length:', dataset['petal_width'].sum())
+
+# Get the count of the number of values of each column
+print('Count of the number of values in column sepal_length:', dataset['sepal_length'].count())
+print('Count of the number of values in column sepal_length:', dataset['sepal_width'].count())
+print('Count of the number of values in sepal_length:', dataset['petal_length'].count())
+print('Count of the number of values in sepal_length:', dataset['petal_width'].count())
+
+# Get the average/mean of each column
+print('The average of values in column sepal_length:', dataset['sepal_length'].mean())
+print('The average of values in column sepal_length:', dataset['sepal_width'].mean())
+print('The average of values in sepal_length:', dataset['petal_length'].mean())
+print('The average of values in sepal_length:', dataset['petal_width'].mean())
+```
 
 ```Python
 # Fiona Nealon, 2018-04-27
