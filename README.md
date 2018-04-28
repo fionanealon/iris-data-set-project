@@ -376,9 +376,9 @@ The above program finds the maximum, minimum, sum, count and mean of each column
 
 The program reads the iris.csv file from the subfolder and assigns the name dataset to it. ```dataset = pd.read_csv('data/iris.csv')``` ```pd.read_csv``` is an attribute of the pandas library that reads a csv file into python.
 
-The program calls the max(), min(), sum(), count() and mean() functions to manipulate the data set and provide an analysis of each column.
+The program calls the max(), min(), sum(), count() and mean() functions to manipulate the data set, provide an analysis of each column and print results to the prompt in the terminal.
 
-The 'index' method finds the given element in a list and returns its position so ['sepal_length'] prints the sepal length column in the list, ['sepal_width'] prints the sepal width column in the list, ['petal_length'] prints the petal length column in the list and ['sepal_width'] prints the sepal length column in the list
+In the print functions, the 'index' method finds the given element in an array and returns its position so ['sepal_length'] prints the sepal length column in the array, ['sepal_width'] prints the sepal width column in the array, ['petal_length'] prints the petal length column in the array and ['sepal_length'] prints the sepal length column in the array.
 
 #### How to run this code:
 
@@ -389,6 +389,7 @@ The 'index' method finds the given element in a list and returns its position so
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
+9. Add column headers to each column on iris.csv file and save
 8. Save investigate.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
