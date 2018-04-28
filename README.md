@@ -202,7 +202,8 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 3. Split.py - A program that reads and formats the Iris Data set
 4. Investigate.py - A program to read a .csv file and print max, min, sum, count & average of each column
 
-   1. Openfile1.py 
+#### Openfile1.py 
+ 
 ```Python
 # Fiona Nealon, 2018-04-27
 # Iris data set analysis
@@ -216,8 +217,9 @@ print(f)
 # Close iris.csv file
 f.close()
 ```
-####Discussion and analysis of Openfile1.py####
+#### Discussion and analysis of Openfile1.py
  
+The above piece of code opens a file object using open(). The file being opened in this case is the iris.csv in th data subfolder. The program prints some information about the file using ```print(f)```. It is good practise to close the file before the program exits. Otherwise, the program is in an indeterminate state.
  
 
 
