@@ -186,7 +186,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 https://en.wikipedia.org/wiki/Iris_flower_data_set
 https://en.wikipedia.org/wiki/Petal
 https://en.wikipedia.org/wiki/Sepal)
-
+http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
@@ -202,7 +202,7 @@ https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-
 3. Split.py - A program that reads and formats the Iris Data set
 4. Investigate.py - A program to read a .csv file and print max, min, sum, count & average of each column
 
-#### 0penfile1.py 
+#### openfile1.py 
  
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -242,7 +242,7 @@ The above piece of code opens a file object using open(). The file being opened 
 11. Type ‘python openfile1.py’ in the command prompt in the terminal
 12. Press enter
 
-
+#### openfile2.py 
 
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -258,6 +258,29 @@ with open("data/iris.csv") as f:
 # Print contents of file
   print(contents)
 ```
+#### Discussion and analysis of openfile2.py
+
+
+
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save openfile1.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open openfile2.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python openfile2.py’ in the command prompt in the terminal
+12. Press enter
+
+
 
 ```Python
 # Fiona Nealon, 2018-04-05
