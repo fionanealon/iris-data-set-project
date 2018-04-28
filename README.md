@@ -189,6 +189,7 @@ https://en.wikipedia.org/wiki/Sepal)
 http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 https://www.techopedia.com/definition/32880/iris-flower-data-set
 https://en.wikipedia.org/wiki/NumPy
+https://en.wikipedia.org/wiki/Pandas_%28software%29
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
@@ -371,7 +372,7 @@ print('The average of values in sepal_length:', dataset['petal_width'].mean())
 ```
 #### Discussion and analysis of investigate.py
  
-The above program finds the maximum, minimum, sum, count and mean of each column in the Iris flower data set. It uses both the numpy and pandas libraries which provide a collection of high level mathemetical functions to operate on arrays to assist with data maipulation and analysis.
+The above program finds the maximum, minimum, sum, count and mean of each column in the Iris flower data set. It uses both the numpy and pandas libraries which provide a collection of high level mathemetical functions to operate on arrays to assist with data maipulation and analysis. [Ref: Numpy](https://en.wikipedia.org/wiki/NumPy) [Ref: Pandas](https://en.wikipedia.org/wiki/Pandas_%28software%29)
  
  
 #### How to run this code:
