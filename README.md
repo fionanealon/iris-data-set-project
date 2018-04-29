@@ -1301,7 +1301,7 @@ The above block of code uses the matplotlib, plyplot and seaborn libraries to pl
 
 ![A picture of totalplot](totalplot.png)
 
-
+The above plots provide a summary of all of the information aready discussed under histograms and scatterplots.
 
 #### How to run this code:
 
@@ -1312,12 +1312,12 @@ The above block of code uses the matplotlib, plyplot and seaborn libraries to pl
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
-8. Save width.py file into project iris folder
+8. Save totalplot.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
-9. Open width.py file
+9. Open totalplot.py file
 10. Open integrated terminal in Visual Studio code (Crtl + ')
-11. Type ‘python width.py’ in the command prompt in the terminal
+11. Type ‘python totalplot.py’ in the command prompt in the terminal
 12. Press enter
 
 # Plan for project
