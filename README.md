@@ -217,7 +217,7 @@ Wikipedia contributors. "Matplotlib" Wikipedia, The Free Encyclopedia. Wikipedia
 
 Seaborn library available at: https://seaborn.pydata.org/
 
-Pandas available at: https://www.youtube.com/watch?v=hllTTzHazDY
+Pandas tutorial available at: https://www.youtube.com/watch?v=hllTTzHazDY
 
 Scatterplot species available at: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 
