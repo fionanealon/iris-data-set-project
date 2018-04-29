@@ -222,7 +222,7 @@ https://www.youtube.com/watch?v=hllTTzHazDY
 3. Split.py - A program that reads and formats the Iris Data set
 4. Investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column
 
-#### openfile1.py - A program that opens a .csv file, reads it, prints it and closes it again
+**1. openfile1.py - A program that opens a .csv file, reads it, prints it and closes it again**
  
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -262,7 +262,7 @@ The above piece of code opens a file object using open(). The file being opened 
 11. Type ‘python openfile1.py’ in the command prompt in the terminal
 12. Press enter
 
-#### openfile2.py - An alernative program that opens a .csv file, reads it, prints it and closes it again
+**2. openfile2.py - An alernative program opens a .csv file, reads it, prints it and closes it again**
 
 ```Python
 # Fiona Nealon, 2018-04-27
@@ -299,7 +299,7 @@ The above piece of code is an alternative program for opening a file, reading a 
 11. Type ‘python openfile2.py’ in the command prompt in the terminal
 12. Press enter
 
-#### split.py - A program that reads and formats the Iris Data set
+**3. Split.py - A program that reads and formats the Iris Data set**
 
 ```Python
 # Fiona Nealon, 2018-04-05
@@ -340,7 +340,7 @@ The above 'split' function splits each line into a python list. The 'index' meth
 11. Type ‘python split.py’ in the command prompt in the terminal
 12. Press enter
 
-#### investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column
+**4. Investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column**
 
 ```Python
 # Print contents of file
