@@ -1101,9 +1101,9 @@ pl.show()
 
 To create a scatter plot for the petal and sepal length variables, I have used the seaborn library to read in the iris.csv file from the data subfolder. Seaborn is a graphics library based on matplotlib and it provides a high-level interface for drawing attractive statistical graphics. I have then selected the petal and sepal length columns form the seaborn iris file for my scatter plot. I have used the implot attribute from the seaborn library to plot the scatter plot and to add a legend for the column 'species' to it. I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal and sepal length scatter plot')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below scatter plot in png format.
 
-![A picture of scatter](petalandsepallengthscatter.png)
+![A picture of scatter](petalandsepallength.png)
 
-In tha above scatter plot, I have added sepal length to the x axis and petal length to the y axis. A dot is added to the scatter plot for each sepal and petal length from each row on the iris data file. The legend provides an explanation for each of the three colours displayed on the scatter graph. The setosa species are denoted by blue dots, the versicolour species are denoted by orange dots and the virginica species are denoted by green dots. A scatter plot shows the relationship between two variables - the sepal length and petal. For the setosa species, the above scatter plot shows that the sepals and petals of this species tend to be the shortest of all three species. The sepals and petals of the versicolour species tend to be longer than the setosa species but as not long as the virginica species. The sepals and petals of the virginica species are the largest of all three species. 
+In tha above scatter plot, I have added sepal length to the x axis and petal length to the y axis. A dot is added to the scatter plot for each sepal and petal length from each row on the iris data file. The legend provides an explanation for each of the three colours displayed on the scatter graph. The setosa species are denoted by blue dots, the versicolour species are denoted by orange dots and the virginica species are denoted by green dots. A scatter plot shows the relationship between two variables - the sepal length and petal length. For the setosa species, the above scatter plot shows that the sepals and petals of this species tend to be the shortest of all three species. The sepals and petals of the versicolour species tend to be longer than the setosa species but as not long as the virginica species. The sepals and petals of the virginica species are the largest of all three species. 
 
 #### How to run this code:
 
@@ -1114,15 +1114,74 @@ In tha above scatter plot, I have added sepal length to the x axis and petal len
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
-8. Save petal.py file into project iris folder
+8. Save length.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
-9. Open petal.py file
+9. Open length.py file
 10. Open integrated terminal in Visual Studio code (Crtl + ')
-11. Type ‘python petal.py’ in the command prompt in the terminal
+11. Type ‘python length.py’ in the command prompt in the terminal
 12. Press enter
 
 
+**4 width.py - A python file to output a scatter plot of petal and sepal width**
+
+```python
+# Fiona Nealon, 2018-04-28
+# Iris data set analysis
+# Create a scatter plot for petal and sepal width
+
+# Use matplotlib & pyplot libraries to plot scatter plot
+import matplotlib.pyplot as pl
+
+# Use seaborn library to analyse data
+import seaborn as sns
+
+# Read csv file into python using seaborn
+iris = sns.load_dataset("iris")
+
+# Select all values in petal width array
+iris["petal"] = iris["petal_width"]
+
+# Select all values in sepal width array
+iris["sepal"] = iris["sepal_width"]
+
+# Adapted from: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset 
+# Use seaborn to compare variables
+sns.lmplot(x="sepal", y="petal", data=iris, hue="species", fit_reg=False, legend=False)
+
+# Add legend to scatter plot
+pl.legend()
+
+# Add title to scatter plot
+pl.title('petal width and sepal width scatter plot')
+
+# Output scatter plot
+pl.show()
+```
+#### Discussion and analysis of width.py
+
+To create a scatter plot for the petal and sepal width variables, I have used the seaborn library to read in the iris.csv file from the data subfolder. Seaborn is a graphics library based on matplotlib and it provides a high-level interface for drawing attractive statistical graphics. I have then selected the petal and sepal width columns form the seaborn iris file for my scatter plot. I have used the implot attribute from the seaborn library to plot the scatter plot and to add a legend for the column 'species' to it. I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal and sepal width scatter plot')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below scatter plot in png format.
+
+![A picture of scatter](petalandsepalwidth.png)
+
+In tha above scatter plot, I have added sepal width to the x axis and petal width to the y axis. A dot is added to the scatter plot for each sepal and petal width from each row on the iris data file. The legend provides an explanation for each of the three colours displayed on the scatter graph. The setosa species are denoted by blue dots, the versicolour species are denoted by orange dots and the virginica species are denoted by green dots. A scatter plot shows the relationship between two variables - the sepal width and petal width. For the setosa species, the above scatter plot shows that the sepals and petals of this species tend to be the least wide of all three species. The sepals and petals of the versicolour species tend to be wider than the setosa species but as not wide as the virginica species. The sepals and petals of the virginica species are the widest of all three species. 
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save width.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open width.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python width.py’ in the command prompt in the terminal
+12. Press enter
 # Plan for project
 
 ## Iris data set
