@@ -1,10 +1,10 @@
-# Project 2018
+.# Project 2018
 
 ## Problem statement
 
 The following project concerns the well-known Fischer's Iris data set. The project entails you reseacrhing the data set, and then writing documentation and code in the Python programming language based on that research.
 
-An online search for information on the data set will convince you that many people have investigated and written about it previously, and may of those are not experienced programmers, You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows:
+An online search for information on the data set will convince you that many people have investigated and written about it previously, and may of those are not experienced programmers. You are expected to be able to break this project into several smaller tasks that are easier to solve, and to plug these together after they have been completed. You might do that for this project as follows:
 
 **1. Research back ground information about the data set and write a summary about it.**
 
@@ -160,7 +160,7 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 6.4 | 2.8 | 5.6 | 2.1 | Iris-virginica
 7.2 | 3.0 | 5.8 | 1.6 | Iris-virginica
 7.4 | 2.8 | 6.1 | 1.9 | Iris-virginica
-3.7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
+7.9 | 3.8 | 6.4 | 2.0 | Iris-virginica
 6.4 | 2.8 | 5.6 | 2.2 | Iris-virginica
 6.3 | 2.8 | 5.1 | 1.5 | Iris-virginica
 6.1 | 2.6 | 5.6 | 1.4 | Iris-virginica
@@ -184,19 +184,34 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 **2. Keep a list of references you used in completing the project.**
 
 https://en.wikipedia.org/wiki/Iris_flower_data_set
+
 https://en.wikipedia.org/wiki/Petal
-https://en.wikipedia.org/wiki/Sepal)
+
+https://en.wikipedia.org/wiki/Sepal
+
 http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+
 https://www.techopedia.com/definition/32880/iris-flower-data-set
+
 https://en.wikipedia.org/wiki/NumPy
+
 https://en.wikipedia.org/wiki/Pandas_%28software%29
+
 https://en.wikipedia.org/wiki/Median
+
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
+
 https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
+
 https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
+
 https://www.thoughtco.com/what-is-a-histogram-3126359
+
 https://en.wikipedia.org/wiki/Matplotlib
+
 https://seaborn.pydata.org/
+
+https://www.youtube.com/watch?v=hllTTzHazDY
 
 
 **3. Download the data set and write some Python code to investigate it**
@@ -276,7 +291,7 @@ The above piece of code is an alternative program for opening a file, reading a 
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
-8. Save openfile1.py file into project iris folder
+8. Save openfile2.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
 9. Open openfile2.py file
@@ -306,7 +321,7 @@ The above block of code opens the iris.csv file in the sub folder, loops through
 ```python
 print(line.split(',')[0], line.split(',')[1], line.split(',')[2], line.split(',')[3])
 ```
-The above 'split' command splits each line into a python list. The 'index' method finds the given element in a list and returns its position so [0] prints the first column in the list, [1] prints the second column in the list, [2] prints the third column on the list and [3] prints the fourth column on the list.
+The above 'split' function splits each line into a python list. The 'index' method finds the given element in a list and returns its position so [0] prints the first column in the list, [1] prints the second column in the list, [2] prints the third column on the list and [3] prints the fourth column on the list.
 
 #### How to run this code:
 
@@ -346,33 +361,33 @@ dataset = pd.read_csv('data/iris.csv')
 
 # Get the maximum value of each column 
 print('Maximum value of column sepal_length:', dataset['sepal_length'].max())
-print('Maximum value of column sepal_length:', dataset['sepal_width'].max())
-print('Maximum value of column sepal_length:', dataset['petal_length'].max())
-print('Maximum value of column sepal_length:', dataset['petal_width'].max())
+print('Maximum value of column sepal_width:', dataset['sepal_width'].max())
+print('Maximum value of column petal_length:', dataset['petal_length'].max())
+print('Maximum value of column petal_width:', dataset['petal_width'].max())
 
 # Get the minimum value of each column
 print('Minimum value of column sepal_length:', dataset['sepal_length'].min())
-print('Minimum value of column sepal_length:', dataset['sepal_width'].min())
-print('Minimum value of column sepal_length:', dataset['petal_length'].min())
-print('Minimum value of column sepal_length:', dataset['petal_width'].min())
+print('Minimum value of column sepal_width:', dataset['sepal_width'].min())
+print('Minimum value of column petal_length:', dataset['petal_length'].min())
+print('Minimum value of column petal_width:', dataset['petal_width'].min())
 
 # Get the sum value of each column
 print('Sum value of column sepal_length:', dataset['sepal_length'].sum())
-print('Sum value of column sepal_length:', dataset['sepal_width'].sum())
-print('Sum value of column sepal_length:', dataset['petal_length'].sum())
-print('Sum value of column sepal_length:', dataset['petal_width'].sum())
+print('Sum value of column sepal_width:', dataset['sepal_width'].sum())
+print('Sum value of column petal_length:', dataset['petal_length'].sum())
+print('Sum value of column petal_width:', dataset['petal_width'].sum())
 
 # Get the count of the number of values of each column
 print('Count of the number of values in column sepal_length:', dataset['sepal_length'].count())
-print('Count of the number of values in column sepal_length:', dataset['sepal_width'].count())
-print('Count of the number of values in sepal_length:', dataset['petal_length'].count())
-print('Count of the number of values in sepal_length:', dataset['petal_width'].count())
+print('Count of the number of values in column sepal_width:', dataset['sepal_width'].count())
+print('Count of the number of values in petal_length:', dataset['petal_length'].count())
+print('Count of the number of values in petal_width:', dataset['petal_width'].count())
 
 # Get the average/mean of each column
 print('The average of values in column sepal_length:', dataset['sepal_length'].mean())
-print('The average of values in column sepal_length:', dataset['sepal_width'].mean())
-print('The average of values in sepal_length:', dataset['petal_length'].mean())
-print('The average of values in sepal_length:', dataset['petal_width'].mean())
+print('The average of values in column sepal_width:', dataset['sepal_width'].mean())
+print('The average of values in petal_length:', dataset['petal_length'].mean())
+print('The average of values in petal_width:', dataset['petal_width'].mean())
 ```
 #### Discussion and analysis of investigate.py
  
@@ -384,6 +399,9 @@ The program calls the max(), min(), sum(), count() and mean() functions to manip
 
 In the print functions, the 'index' method finds the given element in an array and returns its position so ['sepal_length'] prints the sepal length column in the array, ['sepal_width'] prints the sepal width column in the array, ['petal_length'] prints the petal length column in the array and ['sepal_length'] prints the sepal length column in the array.
 
+
+![A picture of investigate](investigate.JPG)
+
 #### How to run this code:
 
 1. Download [Anaconda](https://anaconda.org/).
@@ -393,7 +411,7 @@ In the print functions, the 'index' method finds the given element in an array a
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
-9. Add column headers to each column on iris.csv file and save
+9. Add column headers to each column on iris.csv file and save - 'sepal_length','sepal_width', 'petal_length' and 'petal_width'
 8. Save investigate.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
