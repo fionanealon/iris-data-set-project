@@ -194,6 +194,8 @@ https://en.wikipedia.org/wiki/Median
 https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
+https://www.thoughtco.com/what-is-a-histogram-3126359
+https://en.wikipedia.org/wiki/Matplotlib
 
 
 **3. Download the data set and write some Python code to investigate it**
@@ -924,6 +926,16 @@ In the python code I have ran previously, I have already established that the av
 11. Type ‘python petallengthhist.py’ in the command prompt in the terminal
 12. Press enter
 
+#### Scatter plots
+
+A scatter plot is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data are displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.
+
+
+#### Summary of python files uploaded to project repository to output a histogram
+1. sepallengthhist.py  - A python file to output a histogram of sepal length
+2. sepalwidthhist.py  - A python file to output a histogram of sepal width
+3. petallengthhist.py   - A python file to output a histogram of petal length
+4. petalwidthhist.py  - A python file to output a histogram of petal width
 
 ![A picture of scatter](sepallengthandwidthscatter.png)
 
