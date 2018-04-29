@@ -761,9 +761,9 @@ In the python code I have ran previously, I have already established that the av
 8. Save sepallengthhist.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
-9. Open sepallengthhist..py file
+9. Open sepallengthhist.py file
 10. Open integrated terminal in Visual Studio code (Crtl + ')
-11. Type ‘python sepallengthhist..py’ in the command prompt in the terminal
+11. Type ‘python sepallengthhist.py’ in the command prompt in the terminal
 12. Press enter
 
 **2. sepalwidthhist.py  - A python file to output a histogram of sepal width**
@@ -794,11 +794,9 @@ pl.title('sepal_width histogram')
 # Output the histogram
 pl.show()
 ```
-
-
 #### Discussion and analysis of sepalwidthhist.py
 
-To create a histogram for sepal width, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the sepal width values in the array by indexing the first column in the array. ```secondcol = data[:,1]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal_width histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
+To create a histogram for sepal width, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the sepal width values in the array by indexing the second column in the array. ```secondcol = data[:,1]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal_width histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
 
 ![A picture of hist](sepalwidthhist.png)
 
@@ -813,17 +811,69 @@ In the python code I have ran previously, I have already established that the av
 5. Save a new folder on desktop e.g. project iris
 6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
 7. Save as .csv file in subfolder called data in project iris folder
-8. Save sepallengthhist.py file into project iris folder
+8. Save sepalwidthhist.py file into project iris folder
 7. Open Visual Studio Code
 8. Open project iris folder from desktop
-9. Open sepallengthhist..py file
+9. Open sepalwidthhist.py file
 10. Open integrated terminal in Visual Studio code (Crtl + ')
-11. Type ‘python sepallengthhist..py’ in the command prompt in the terminal
+11. Type ‘python sepalwidthhist..py’ in the command prompt in the terminal
+12. Press enter
+
+**3. petallengthhist.py  - A python file to output a histogram of petal length**
+
+```python
+# Fiona Nealon, 2018-04-28
+# Iris data set analysis
+# Create a histogram for petal length
+
+# Use numpy library to analyse Iris file
+import numpy
+
+# Read csv file into python using numpy
+data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+
+# Select all values in third column of numpy array
+thirdcol = data[:,2]
+
+# Use numatplotlib & pyplot libraries to plot histogram
+import matplotlib.pyplot as pl
+
+# Plot histogram of the third column
+pl.hist(thirdcol)
+
+# Add title to histogram
+pl.title('petal_length histogram')
+
+# Output the histogram
+pl.show()
+```
+#### Discussion and analysis of petallengthhist.py
+
+To create a histogram for petal length, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal length values in the array by indexing the third column in the array. ```thirdcol = data[:,1]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
+
+![A picture of hist](petallengthhist.png)
+
+In the python code I have ran previously, I have already established that the average of the values of petal length is 3.75, the minimum of these values is 1.0 and the maximum of these values is 6.9. Now I have created a histogram with matplotlib and pyplot to demonstrate the frequency in which these values occur. From the above histogram, I can see minimum value of petal length starting on the x axis at 1.0 and the maximum value of petal length finishing on the x axis at 6.9. The y axis also shows the frequency in which these values occur. This histogram shows that although the average of petal length values is 3.05, the highest frequency of petal length values is not in this region. The frequency of this value is actually only around 3 to 4. There are two peaks in the histogram around the 1.0 to 2.0 values and the 3.0 to 4.0 to values. The average of value of petal length is actaully an average of these two peaks.
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save petallengthhist.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open petallengthhist.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python petallengthhist.py’ in the command prompt in the terminal
 12. Press enter
 
 
 
-![A picture of hist](petallengthhist.png)
 
 
 ![A picture of hist](petalwidthhist.png)
