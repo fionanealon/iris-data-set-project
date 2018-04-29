@@ -701,6 +701,19 @@ print("Sum of fourth column is:", sumfourthcol)
 ```
 The above lines the call the print function with an argument of sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol values.
 
+**5 & 6. Write a summary of your investigations and include graphics and code as you deem necessary.
+
+##### Histograms
+
+
+ Summary of python files uploaded to project repository to output a histogram
+1. sepallengthhist.py  - A python file to output a histogram of sepal length
+2. sepalwidthhist.py  - A python script to output a histogram of sepal width
+3. petallengthhist.py   - A python script to output a histogram of petal length
+4. petalwidthhist.py  - A python script to output a histogram of petal width
+
+**1. sepallengthhist.py  - A python file to output a histogram of sepal length**
+
 ![A picture of hist](sepallengthhist.png)
 
 
