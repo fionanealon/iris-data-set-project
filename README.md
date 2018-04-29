@@ -213,6 +213,9 @@ https://seaborn.pydata.org/
 
 https://www.youtube.com/watch?v=hllTTzHazDY
 
+https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+
+https://stackoverflow.com/questions/46383645/seaborn-and-pd-scatter-matrix-plot-color-issues
 
 **3. Download the data set and write some Python code to investigate it**
 
