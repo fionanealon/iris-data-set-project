@@ -978,7 +978,7 @@ pl.show()
 
 To create a scatter plot for the sepal length and width variables, I have used the seaborn library to read in the iris.csv file from the data subfolder. Seaborn is a graphics library based on matplotlib and it provides a high-level interface for drawing attractive statistical graphics. I have then selected the sepal length and sepal width columns form the seaborn iris file for my scatter plot. I have used the implot attribute from the seaborn library to plot the scatter plot and to add a legend for the column 'species' to it. I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal length and width scatter plot')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below scatter plot in png format.
 
-![A picture of scatter](sepallengthandwidthscatter.png)
+![A picture of scatter](petallengthandwidthscatter.png)
 
 
 
