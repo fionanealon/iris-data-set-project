@@ -1,4 +1,4 @@
-.# Project 2018
+# Project 2018
 
 ## Problem statement
 
@@ -11,11 +11,11 @@ An online search for information on the data set will convince you that many peo
 
 ![A picture of fischer](Fischer.jpg)
 
-One of the first multivariate data sets was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the botantical variations of Iris flowers of three related species. There are 150 rows of data in the dataet and each row of the dataset represents an iris flower, including its species and dimensions of its botanical parts, sepal and petal, in centimeters. [Ref: Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
+One of the first multivariate data sets was introduced by British statiscian and biologist Ronald Fischer in 1936. This was named the Iris flower data set or Fisher's Iris data set. It is sometimes referred to as Anderson's Iris data set as it was Edgar Anderson who collected the data to quantify the botantical variations of Iris flowers of three related species. There are 150 rows of data in the data set and each row of the dataset represents an iris flower, including its species and dimensions of its botanical parts, sepal and petal, in centimeters. [Ref: Iris flower data set](https://en.wikipedia.org/wiki/Iris_flower_data_set)
 
 ![A picture of iris](iris.png)
 
-The above picture shows the three species contained in each class of the data set - Iris setosa, Iris virginica and Iris versicolor. The dataset contains 50 samples each of these species with their botanical dimensions, sepal and petal, included in each row of the dataset.
+The above picture shows the three species contained in each class of the data set - Iris setosa, Iris virginica and Iris versicolor. The data set contains 50 samples each of these species with their botanical dimensions, sepal and petal, included in each row of the dataset.
 
 ![A picture of iris labels](iris_with_labels.jpg)
 
