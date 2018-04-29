@@ -196,6 +196,7 @@ https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
 https://www.thoughtco.com/what-is-a-histogram-3126359
 https://en.wikipedia.org/wiki/Matplotlib
+https://seaborn.pydata.org/
 
 
 **3. Download the data set and write some Python code to investigate it**
@@ -975,9 +976,7 @@ pl.show()
 ```
 #### Discussion and analysis of sepal.py
 
-To create a histogram for petal width, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal width values in the array by indexing the fourth column in the array. ```fourthcol = data[:,3]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
-
-
+To create a scatter plot for the sepal length and width variables, I have used the seaborn library to read in the iris.csv file from the data subfolder. Seaborn is a graphics library based on matplotlib and it provides a high-level interface for drawing attractive statistical graphics. I have then selected the sepal length and sepal width columns form the seaborn iris file for my scatter plot. I have used the implot attribute from the seaborn library to plot the scatter plot and to add a legend for the column 'species' to it. I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal length and width scatter plot')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below scatter plot in png format.
 
 ![A picture of scatter](sepallengthandwidthscatter.png)
 
