@@ -849,11 +849,11 @@ pl.show()
 ```
 #### Discussion and analysis of petallengthhist.py
 
-To create a histogram for petal length, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal length values in the array by indexing the third column in the array. ```thirdcol = data[:,1]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
+To create a histogram for petal length, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal length values in the array by indexing the third column in the array. ```thirdcol = data[:,]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
 
 ![A picture of hist](petallengthhist.png)
 
-In the python code I have ran previously, I have already established that the average of the values of petal length is 3.75, the minimum of these values is 1.0 and the maximum of these values is 6.9. Now I have created a histogram with matplotlib and pyplot to demonstrate the frequency in which these values occur. From the above histogram, I can see minimum value of petal length starting on the x axis at 1.0 and the maximum value of petal length finishing on the x axis at 6.9. The y axis also shows the frequency in which these values occur. This histogram shows that although the average of petal length values is 3.05, the highest frequency of petal length values is not in this region. The frequency of this value is actually only around 3 to 4. There are two peaks in the histogram around the 1.0 to 2.0 values and the 3.0 to 4.0 to values. The average of value of petal length is actaully an average of these two peaks.
+In the python code I have ran previously, I have already established that the average of the values of petal length is 3.75, the minimum of these values is 1.0 and the maximum of these values is 6.9. Now I have created a histogram with matplotlib and pyplot to demonstrate the frequency in which these values occur. From the above histogram, I can see minimum value of petal length starting on the x axis at 1.0 and the maximum value of petal length finishing on the x axis at 6.9. The y axis also shows the frequency in which these values occur. This histogram shows that although the average of petal length values is 3.05, the highest frequency of petal length values is not in this region. The frequency of this value is actually only around 3 to 4. There are two peaks in the histogram around the 1.0 to 2.0 values and the 3.0 to 4.0 to values. The average of value of petal length is actually an average of these two peaks.
 
 #### How to run this code:
 
@@ -872,11 +872,57 @@ In the python code I have ran previously, I have already established that the av
 11. Type ‘python petallengthhist.py’ in the command prompt in the terminal
 12. Press enter
 
+**4. petalwidthhist.py  - A python file to output a histogram of petal width**
 
+```python
+# Iris data set analysis
+# Create a histogram for petal width
 
+# Use numpy library to analyse Iris file
+import numpy
 
+# Read csv file into python using numpy
+data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+
+# Select all values in fourth column of numpy array
+fourthcol = data[:,3]
+
+# Use matplotlib & pyplot libraries to plot histogram
+import matplotlib.pyplot as pl
+
+# Plot histogram of the fourth column
+pl.hist(fourthcol)
+
+# Add title to histogram
+pl.title('petal_width histogram')
+
+# Output the histogram
+pl.show()
+```
+#### Discussion and analysis of petalwidthhist.py
+
+To create a histogram for petal width, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal width values in the array by indexing the fourth column in the array. ```fourthcol = data[:,3]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
 
 ![A picture of hist](petalwidthhist.png)
+
+In the python code I have ran previously, I have already established that the average of the values of petal width is 1.19, the minimum of these values is 0.1 and the maximum of these values is 2.5. Now I have created a histogram with matplotlib and pyplot to demonstrate the frequency in which these values occur. From the above histogram, I can see minimum value of petal width starting on the x axis at 0.1 and the maximum value of petal length finishing on the x axis at 2.5. The y axis also shows the frequency in which these values occur. This histogram shows that although the average of petal length values is 1.19, there aappears to be 3 peaks in the frequency of the values of petal width - at .01, 1.5 and 2.0. The average of value of petal length is actually an average of these three peaks.
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save petallengthhist.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open petallengthhist.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python petallengthhist.py’ in the command prompt in the terminal
+12. Press enter
 
 # Plan for project
 
