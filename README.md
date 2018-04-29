@@ -931,11 +931,53 @@ In the python code I have ran previously, I have already established that the av
 A scatter plot is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data are displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.
 
 
-#### Summary of python files uploaded to project repository to output a histogram
-1. sepallengthhist.py  - A python file to output a histogram of sepal length
-2. sepalwidthhist.py  - A python file to output a histogram of sepal width
-3. petallengthhist.py   - A python file to output a histogram of petal length
-4. petalwidthhist.py  - A python file to output a histogram of petal width
+#### Summary of python files uploaded to project repository to output a scatter plot
+
+1. sepal.py - A python file to output a scatter plot of sepal length and width
+2. petal.py - A python file to output a histogram of petal length and width
+3. length.py - A python file to output a histogram of sepal and petal length
+4. width.py - A python file to output a histogram of sepal and petal width
+
+**1. sepal.py - A python file to output a scatter plot of sepal length and width**
+
+```python
+# Fiona Nealon, 2018-04-28
+# Iris data set analysis
+# Create a scatter plot for sepal width and length
+
+# Use matplotlib & pyplot libraries to plot scatter plot
+import matplotlib.pyplot as pl
+
+# Use seaborn library to analyse data
+import seaborn as sns
+
+# Read csv file into python using seaborn
+iris = sns.load_dataset("iris")
+
+# Select all values in sepal length array
+iris["length"] = iris["sepal_length"]
+
+# Select all values in sepal width array
+iris["width"] = iris["sepal_width"]
+
+# Adapted from: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset 
+# Use seaborn to compare variables
+sns.lmplot(x="length", y="width", data=iris, hue="species", fit_reg=False, legend=False)
+
+# Add legend to scatter plot
+pl.legend()
+
+# Add title to scatter plot
+pl.title('sepal length and width scatter plot')
+
+# Output scatter plot
+pl.show()
+```
+#### Discussion and analysis of sepal.py
+
+To create a histogram for petal width, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the petal width values in the array by indexing the fourth column in the array. ```fourthcol = data[:,3]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('petal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
+
+
 
 ![A picture of scatter](sepallengthandwidthscatter.png)
 
