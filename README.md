@@ -925,7 +925,7 @@ In the python code I have ran previously, I have already established that the av
 12. Press enter
 
 
-![A picture of scatter](petal length and sepal length scatter.png)
+![A picture of scatter](sepallengthandwidthscatter.png)
 
 
 
