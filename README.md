@@ -1033,7 +1033,7 @@ In the python code I have ran previously, I have already established that the av
 
 #### Scatter plots
 
-A scatter plot is a type of plot or mathematical diagram using Cartesian coordinates to display values for typically two variables for a set of data. If the points are color-coded, one additional variable can be displayed. The data are displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.
+A scatter plot is a plot to display values for typically two variables for a set of data. The data are displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis. [Ref: Scatter plot](https://en.wikipedia.org/wiki/Scatter_plot)
 
 
 #### Summary of python files uploaded to project repository to output a scatter plot
