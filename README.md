@@ -812,7 +812,7 @@ The above lines the call the print function with an argument of sumfirstcol, sum
 
 #### Histograms
 
-Histograms provide a visual interpretation of numerical univariate data by indicating the number of data points that lie within a range of values.  These range of of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar.  The higher that the bar is, the greater the frequency of data values in that bin. Bar chart for continuous data values.
+Histograms provide a visualisation of numerical, univariate data by indicating the number of data points that lie within a range of values.  These range of of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar.  The higher that the bar is, the greater the frequency of data values in that bin. It can also be described as a bar chart for continuous data values. [Ref: Histogram](https://en.wikipedia.org/wiki/Histogram).
 
  #### Summary of python files uploaded to project repository to output a histogram
 1. sepallengthhist.py  - A python file to output a histogram of sepal length
