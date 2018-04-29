@@ -183,39 +183,45 @@ Although Fischer's Iris flower data set was initially compiled to identify the b
 
 **2. Keep a list of references you used in completing the project.**
 
-https://en.wikipedia.org/wiki/Iris_flower_data_set
+Python Software Foundation. The Python Tutorial, Python 3.6.5 documentation. Available at https://docs.python.org/3/tutorial/
 
-https://en.wikipedia.org/wiki/Petal
+Python Software Foundation. Python Language Reference, version 2.7. Available at http://www.python.org
 
+Wikipedia contributors. "Iris flower data set" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 07 Feb. 2018. Web. 07 Feb 2018.< https://en.wikipedia.org/wiki/Iris_flower_data_set
+
+Wikipedia contributors. "Petal" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 25 Mar. 2018. Web. 25 Mar. 2018.< https://en.wikipedia.org/wiki/Petal
+
+Wikipedia contributors. "Sepal" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 21 Feb. 2018. Web. 21 Feb. 2018.<
 https://en.wikipedia.org/wiki/Sepal
 
-http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+Iris flower data set available at: http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
 
-https://www.techopedia.com/definition/32880/iris-flower-data-set
+Alternative uses of the Iris data set available at: https://www.techopedia.com/definition/32880/iris-flower-data-set
 
+Wikipedia contributors. "NumPy" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 29 Apr. 2018. Web. 29 Apr. 2018.<
 https://en.wikipedia.org/wiki/NumPy
 
-https://en.wikipedia.org/wiki/Pandas_%28software%29
+Wikipedia contributors. "pandas (software)" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 20 Apr. 2018. Web. 20 Apr. 2018.<https://en.wikipedia.org/wiki/Pandas_%28software%29
 
-https://en.wikipedia.org/wiki/Median
+Wikipedia contributors. "Median" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 27 Apr. 2018. Web. 27 Apr. 2018.<https://en.wikipedia.org/wiki/Median
 
-https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
+genfromtxt available at: https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array
 
-https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
+delimiter available at: https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php
 
-https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
+Iris data set and machine learnning available at: https://stats.stackexchange.com/questions/268561/example-of-backpropagation-for-neural-network-with-softmax-and-sigmoid-activatio
 
-https://www.thoughtco.com/what-is-a-histogram-3126359
+histogram available at: https://www.thoughtco.com/what-is-a-histogram-3126359
 
-https://en.wikipedia.org/wiki/Matplotlib
+Wikipedia contributors. "Matplotlib" Wikipedia, The Free Encyclopedia. Wikipedia, The Free Encyclopedia, 15 Apr. 2018. Web. 15 Apr. 2018.<https://en.wikipedia.org/wiki/Matplotlib
 
-https://seaborn.pydata.org/
+Seaborn library available at: https://seaborn.pydata.org/
 
-https://www.youtube.com/watch?v=hllTTzHazDY
+Pandas available at: https://www.youtube.com/watch?v=hllTTzHazDY
 
-https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+Scatterplot species available at: https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
 
-https://stackoverflow.com/questions/46383645/seaborn-and-pd-scatter-matrix-plot-color-issues
+Pairplot available at: https://stackoverflow.com/questions/46383645/seaborn-and-pd-scatter-matrix-plot-color-issues
 
 **3. Download the data set and write some Python code to investigate it**
 
