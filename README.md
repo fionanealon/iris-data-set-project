@@ -766,6 +766,11 @@ In the python code I have ran previously, I have already established that the av
 11. Type ‘python sepallengthhist..py’ in the command prompt in the terminal
 12. Press enter
 
+**2. sepalwidthhist.py  - A python file to output a histogram of sepal width**
+
+
+
+
 #### Discussion and analysis of sepalwidthhist.py
 
 To create a histogram for sepal length, I have used the numpy library to read in the iris.csv file from the data subfolder. I have selected all the sepal length values in the array by indexing the first column in the array. ```firstcol = data[:,0]```Matplotlib and pyplot are graphics and plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
