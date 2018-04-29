@@ -707,7 +707,7 @@ The above lines the call the print function with an argument of sumfirstcol, sum
 
 Histograms provide a visual interpretation of numerical data by indicating the number of data points that lie within a range of values.  These range of of values are called classes or bins. The frequency of the data that falls in each class is depicted by the use of a bar.  The higher that the bar is, the greater the frequency of data values in that bin.
 
- Summary of python files uploaded to project repository to output a histogram
+ #### Summary of python files uploaded to project repository to output a histogram
 1. sepallengthhist.py  - A python file to output a histogram of sepal length
 2. sepalwidthhist.py  - A python file to output a histogram of sepal width
 3. petallengthhist.py   - A python file to output a histogram of petal length
@@ -741,6 +741,9 @@ pl.title('sepal_length histogram')
 # Output the histogram
 pl.show()
 ```
+#### Discussion and analysis of sepallengthhist.py
+
+To create a histogram for sepal length, I have used the numpy libraray to read in the iris.csv file from the data subfolder. I have selected all the sepal length values in the array by indexing the first column in the array. ```firstcol = data[:,0]```Matplotlib and pyplot are plotting liraries in python and can be used to create a variety of graphs in python e.g. histogram, bar and scatter. in this case, I have used matplotlib and pyplot to create a histogram ```pl.hist```. The ```pl.title('sepal_length histogram')``` piece of code adds a title to the histogram while ```pl.show()``` outputs the below histogram in png format.
 
 ![A picture of hist](sepallengthhist.png)
 
