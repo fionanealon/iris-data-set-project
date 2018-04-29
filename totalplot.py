@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 # Read csv file into python using numpy
 iris = sns.load_dataset("iris")
 
+# Adapted from: https://stackoverflow.com/questions/46383645/seaborn-and-pd-scatter-matrix-plot-color-issues
 # Plot histograms ad scatter plots
 sns.pairplot(iris, hue="species")
 
