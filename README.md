@@ -429,7 +429,7 @@ In the print functions, the 'index' method finds the given element in an array a
 4. median.py - A python script to calculate the median of each column
 5. sum.py - A python script to calculate the sum of each column
 
-#### Mean of each column in the Iris flower data set - mean.py
+**1. mean.py - A python script to calculate the mean of each column**
 
 The mean is the average of an array of numbers. It is calculated by summing all of the numbers in the array and then dividing by the total count of numbers.
 
@@ -488,7 +488,24 @@ print("Average of fourth column is:", meanfourthcol)
 ```
 The above lines then call the print function with an argument of meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  meanfirstcol, meansecondcol, meanthirdcol and meanfourthcol values.
 
-#### Maximum of each column in the Iris flower data set - max.py
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save mean.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open mean.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python mean.py’ in the command prompt in the terminal
+12. Press enter
+
+**2. max.py - A python script to calculate the maximum of each column**
 
 The maximum number is the largest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -545,8 +562,24 @@ print("Maximum of fourth column is:", maxfourthcol)
 ```
 The above lines then call the print function with an argument of minfirstcol, minsecondcol, minthirdcol and minfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  maxfirstcol, maxsecondcol, maxthirdcol and maxfourthcol values.
 
+#### How to run this code:
 
-#### Minimum of each column in the Iris flower data set - min.py
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save max.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open max.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python max.py’ in the command prompt in the terminal
+12. Press enter
+
+**3. min.py - A python script to calculate the minimum of each column**
 
 The minimum number is the smallest number in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -604,7 +637,24 @@ print("Minimum of fourth column is:", minfourthcol)
 ```
 The above lines the call the print function with an argument of minfirstcol, minsecondcol, minthirdcol and minfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  minfirstcol, minsecondcol, minthirdcol and minfourthcol values.
 
-#### Median of each column in the Iris flower data set - median.py
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save min.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open min.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python min.py’ in the command prompt in the terminal
+12. Press enter
+
+**4. median.py - A python script to calculate the median of each column**
 
 The median is the value separating the higher half of the data set from the lower half. It is thought of as the "middle" value. [Ref: Median](https://en.wikipedia.org/wiki/Median) This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -662,7 +712,24 @@ print("Median of fourth column is:", medianfourthcol)
 ```
 The above lines the call the print function with an argument of medianfirstcol, mmediansecondcol, medianthirdcol and medianfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  medianfirstcol, mediansecondcol, medianthirdcol and medianfourthcol values.
 
-#### Sum of each column in the Iris flower data set - sum.py
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save median.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open median.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python median.py’ in the command prompt in the terminal
+12. Press enter
+
+**5. sum.py - A python script to calculate the sum of each column**
 
 The sum number is the total number of all the numbers added together in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
@@ -720,6 +787,23 @@ print("Sum of third column is:", sumthirdcol)
 print("Sum of fourth column is:", sumfourthcol)
 ```
 The above lines the call the print function with an argument of sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol values.
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save sum.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open sum.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python sum.py’ in the command prompt in the terminal
+12. Press enter
 
 **5 & 6. Write a summary of your investigations and include graphics and code as you deem necessary.**
 
