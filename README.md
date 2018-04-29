@@ -701,8 +701,16 @@ print("Sum of fourth column is:", sumfourthcol)
 ```
 The above lines the call the print function with an argument of sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  sumfirstcol, sumsecondcol, sumthirdcol and sumfourthcol values.
 
+![A picture of hist](sepallengthhist.png)
+
+
+![A picture of hist](sepalwidthhist.png)
+
 
 ![A picture of hist](petallengthhist.png)
+
+
+![A picture of hist](petalwidthhist.png)
 
 # Plan for project
 
