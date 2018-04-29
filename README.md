@@ -924,6 +924,11 @@ In the python code I have ran previously, I have already established that the av
 11. Type ‘python petallengthhist.py’ in the command prompt in the terminal
 12. Press enter
 
+
+![A picture of scatter](petal length and sepal length scatter.png)
+
+
+
 # Plan for project
 
 ## Iris data set
