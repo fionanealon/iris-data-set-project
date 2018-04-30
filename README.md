@@ -815,13 +815,13 @@ The above lines the call the print function with an argument of sumfirstcol, sum
 
 **6. std.py -  A python script to calculate the standard deviation of each column**
 
-The sum number is the total number of all the numbers added together in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
+In statistics, the standard deviation is a measure that is used to quantify the amount of variation or dispersion of a set of data values. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
 
 ```Python
 
 # Fiona Nealon, 2018-04-26
 # Iris data set analysis
-# Calculate the sum of each column in the numpy array
+# Calculate the standard deviation of each column in the numpy array
 
 # Use numpy library to analyse Iris file
 import numpy
@@ -858,17 +858,17 @@ stdthirdcol = numpy.std(thirdcol)
 # Find the standard deviation of the fourth column of data
 stdfourthcol = numpy.std(fourthcol)
 ```
-Using the above block of code, the numpy.mean function calls the values assigned to firstcol, secondcol, thirdcol & fourthcol and calulates the sum of each of the columns. The sum value of each of the columns is then assigned to stdfirstcol, stdsecondcol, stdthirdcol & stdfourthcol.
+Using the above block of code, the numpy.std function calls the values assigned to firstcol, secondcol, thirdcol & fourthcol and calulates the sum of each of the columns. The standard deviation value of each of the columns is then assigned to stdfirstcol, stdsecondcol, stdthirdcol & stdfourthcol.
 
 ```Python
 # Print the standard deviation of the first column
-print("Sum of first column is:", sumfirstcol)
+print("Standard deviation of first column is:", sumfirstcol)
 # Print the standard deviation of the second column
-print("Sum of second column is:", sumsecondcol)
+print("Standard deviation of second column is:", sumsecondcol)
 # Print the standard deviation of the third column
-print("Sum of third column is:", sumthirdcol)
+print("Standard deviation of third column is:", sumthirdcol)
 # Print the standard deviation of the fourth column
-print("Sum of fourth column is:", sumfourthcol)
+print("Standard deviation of fourth column is:", sumfourthcol)
 ```
 The above lines the call the print function with an argument of stdfirstcol, stdsecondcol, stdthirdcol and stdfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  stdfirstcol, stdsecondcol, stdthirdcol and stdfourthcol values.
 
