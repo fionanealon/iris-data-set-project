@@ -352,8 +352,6 @@ The above 'split' function splits each line into a python list. The 'index' meth
 **4. Investigate.py - A program that reads a .csv file, manipulates the data to provide analysis on it and prints max, min, sum, count & average of each column**
 
 ```Python
-# Print contents of file
-print(f.read())
 # Fiona Nealon, 2018-04-27
 # Iris data set analysis
 # A program to read in a .csv file and print max, min, sum, count & average of each column
@@ -437,6 +435,7 @@ In the print functions, the 'index' method finds the given element in an array a
 3. min.py - A python script to calculate the minimum of each column
 4. median.py - A python script to calculate the median of each column
 5. sum.py - A python script to calculate the sum of each column
+6. std.py -  A python script to calculate the standard deviation of each column
 
 **1. mean.py - A python script to calculate the mean of each column**
 
@@ -813,6 +812,83 @@ The above lines the call the print function with an argument of sumfirstcol, sum
 10. Open integrated terminal in Visual Studio code (Crtl + ')
 11. Type ‘python sum.py’ in the command prompt in the terminal
 12. Press enter
+
+**6. std.py -  A python script to calculate the standard deviation of each column**
+
+The sum number is the total number of all the numbers added together in an array of numbers. This python script uses a similar logic to the logic used to calculate the mean of each of the columns in the Iris Flower data set.
+
+```Python
+
+# Fiona Nealon, 2018-04-26
+# Iris data set analysis
+# Calculate the sum of each column in the numpy array
+
+# Use numpy library to analyse Iris file
+import numpy
+```
+
+The numpy library provides some advanced math functionalities to python. It adds support for large multi-dimensional arrays and provides a collection of high level mathematical functions to operate on these arrays to assist in manipulating numerical data. I will use the numpy.genfromtxt and the numpy.sum functions to read the csv file into python using numpy and calculate the min of each column in the Iris flower data set. [Ref: numpy](https://en.wikipedia.org/wiki/NumPy)
+
+```Python
+# Read csv file into python using numpy
+data = numpy.genfromtxt('data/iris.csv', delimiter=',')
+```
+Using the numpy.genfromtxt function, I will use numpy to read in the iris csv file into this array and assign this array to data. The numpy.genfromtxt function runs two main loops. The first loop converts each line of the file in a sequence of strings. The second loop converts each string to the appropriate data type. [Ref: numpy.genfromtxt](https://docs.scipy.org/doc/numpy/user/basics.io.genfromtxt.html?highlight=array) A delimiter is a sequence of one or more characters used to specify the boundary between separate, independent regions in plain text or other data streams. [Ref: delimiter](https://www.w3resource.com/python-exercises/re/python-re-exercise-47.php)
+
+```python
+# Select all values in first column of numpy array
+firstcol = data[:,0]
+# Select all values in second column of numpy array
+secondcol = data[:,1]
+# Select all values in third column of numpy array
+thirdcol = data[:,2]
+# Select all values in fourth column of numpy array
+fourthcol = data[:,3]
+```
+In the next block of code, I will assign values to the 1st, 2nd, 3rd and 4th columns in the numpy array. Data is a two dimensional array - an array of arrays. ```Data[0]``` is the usual way to access first element in a list or array. In this case, this will only return the first row of the data. However, I also require the first column of data. To select all of the values in a column in a numpy array, I need to adding the following code ```:,``` to my code so that this selects everything in the first dimension of the array (the column). ```Data[0]``` represents the second dimension of the array. I can adjust the index method in my code and apply the same logic to select the second, third and fourth columns of the numpy array.
+
+
+```Python
+# Find the standard deviaion of the first column of data
+stdfirstcol = numpy.std(firstcol)
+# Find the standard deviation of the second column of data
+stdsecondcol = numpy.std(secondcol)
+# Find the standard deviation of the third column of data
+stdthirdcol = numpy.std(thirdcol)
+# Find the standard deviation of the fourth column of data
+stdfourthcol = numpy.std(fourthcol)
+```
+Using the above block of code, the numpy.mean function calls the values assigned to firstcol, secondcol, thirdcol & fourthcol and calulates the sum of each of the columns. The sum value of each of the columns is then assigned to stdfirstcol, stdsecondcol, stdthirdcol & stdfourthcol.
+
+```Python
+# Print the standard deviation of the first column
+print("Sum of first column is:", sumfirstcol)
+# Print the standard deviation of the second column
+print("Sum of second column is:", sumsecondcol)
+# Print the standard deviation of the third column
+print("Sum of third column is:", sumthirdcol)
+# Print the standard deviation of the fourth column
+print("Sum of fourth column is:", sumfourthcol)
+```
+The above lines the call the print function with an argument of stdfirstcol, stdsecondcol, stdthirdcol and stdfourthcol and prints the values to the command prompt at the terminal. A string has been added to the funtion to provide an explanations of each of the  stdfirstcol, stdsecondcol, stdthirdcol and stdfourthcol values.
+
+#### How to run this code:
+
+1. Download [Anaconda](https://anaconda.org/).
+2. Install Anaconda
+3. Download [Visual Studio Code](https://code.visualstudio.com/download).
+4. Install Visual Studio Code
+5. Save a new folder on desktop e.g. project iris
+6. Copy Iris Flower data set from [Iris Flower Data Set](http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data)
+7. Save as .csv file in subfolder called data in project iris folder
+8. Save std.py file into project iris folder
+7. Open Visual Studio Code
+8. Open project iris folder from desktop
+9. Open std.py file
+10. Open integrated terminal in Visual Studio code (Crtl + ')
+11. Type ‘python std.py’ in the command prompt in the terminal
+12. Press enter
+
 
 **5 & 6. Write a summary of your investigations and include graphics and code as you deem necessary.**
 
